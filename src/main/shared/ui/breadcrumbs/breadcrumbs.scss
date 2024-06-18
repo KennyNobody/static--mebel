@@ -1,0 +1,18 @@
+.breadcrumbs {
+    gap: 8px;
+    display: flex;
+
+    &__item {
+        color: #A9ABB0;
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 300;
+        transition: 0.3s opacity;
+
+        @at-root a#{&} {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

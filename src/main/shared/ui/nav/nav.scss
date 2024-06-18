@@ -1,0 +1,13 @@
+.nav {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        border-radius: 12px;
+        background-color: #F6F6F7;
+        justify-content: space-between;
+    }
+}

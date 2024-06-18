@@ -1,0 +1,16 @@
+.section {
+    width: 100%;
+    display: block;
+
+    &--header {
+        left: 0;
+        right: 0;
+        top: 20px;
+        position: fixed;
+    }
+
+    &--footer {
+        padding: 40px 0 85px;
+        background-color: #E8ECED;
+    }
+}

@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Мебельница</title>
+    <%= htmlWebpackPlugin.options.widgets.head %>
 </head>
-<body>
-    <%= htmlWebpackPlugin.options.widgets.header %>
-    <div class="main">
-        <svg class="icon">
-            <use href="assets/sprite.svg#icon-ball"></use>
-        </svg>
-        <img class="image" src="./assets/images/404.webp" alt="">
+<body class="body">
+    <div class="page">
+        <%= htmlWebpackPlugin.options.widgets.header %>
+        <main class="main main--intro">
+            <div class="main__section mb-150">
+                <%= htmlWebpackPlugin.options.widgets.introGrid %>
+            </div>
+            <div class="main__section mb-150">
+                <%= htmlWebpackPlugin.options.widgets.introWorks %>
+            </div>
+            <div class="main__section mb-150">
+                <%= htmlWebpackPlugin.options.widgets.introReviews %>
+            </div>
+            <div class="main__section mb-150">
+                <%= htmlWebpackPlugin.options.widgets.introProcess %>
+            </div>
+<!--            <img class="image" src="./assets/images/404.webp" alt="">-->
+        </main>
+        <%= htmlWebpackPlugin.options.widgets.footer %>
+        <%= htmlWebpackPlugin.options.widgets.tempLinks %>
     </div>
-    <%= htmlWebpackPlugin.options.widgets.footer %>
 </body>
 </html>

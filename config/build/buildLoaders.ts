@@ -8,21 +8,13 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         use: 'ts-loader',
         exclude: /node_modules/,
     };
-    
+
     const slyleLoader = {
         test: /\.scss|css$/i,
         use: [
+            // options.isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
             MiniCssExtractPlugin.loader,
-            {
-              loader: 'css-loader',
-              options: {
-                  url: {
-                      filter: (url: string | string[]) => {
-                          return url.includes('src/');
-                      },
-                  }
-              }
-            },
+            'css-loader',
             {
                 loader: 'postcss-loader',
                 options: {
@@ -35,21 +27,30 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
             },
             "sass-loader",
         ],
-    }
-    
+    };
+
+    const fontLoader = {
+        test: /\.(woff(2)?|eot|ttf|otf)$/,
+        type: 'asset/resource',
+        generator: {
+            filename: 'assets/fonts/[name][ext]',
+        }
+    };
+
     const svgLoader = {
-        test: /\.svg$/,
+        test: /icon-.*\.svg$/,
         loader: 'svg-sprite-loader',
         options: {
             extract: true,
             spriteFilename: 'sprite.svg',
-            publicPath: '/assets/',
+            publicPath: '/assets/sprite/',
         }
     }
-    
+
     return [
         typeScriptLoader,
         slyleLoader,
+        fontLoader,
         svgLoader,
     ]
 }

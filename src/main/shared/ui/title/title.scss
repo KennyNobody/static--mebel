@@ -1,0 +1,23 @@
+.title {
+    line-height: 1;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+
+    &--decor-underline {
+        &:after {
+            content: "";
+            width: 311px;
+            height: 20px;
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            top: calc(100% + 5px);
+            left: calc(50% - 65px);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/decor-underline.svg");
+        }
+    }
+}

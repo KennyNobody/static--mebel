@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Детальная портфолио - Мебельница</title>
+</head>
+<body class="body">
+    <div class="page">
+        <%= htmlWebpackPlugin.options.widgets.header %>
+        <main class="main main--regular pb-160">
+            <div class="main__section">
+                <section class="section mb-70">
+                    <div class="container">
+                        <div class="stack stack--35">
+                            <nav class="breadcrumbs">
+                                <a href="./" class="breadcrumbs__item">
+                                    Главная
+                                </a>
+                                <span class="breadcrumbs__item">
+                                    /
+                                </span>
+                                <a href="./portfolio.html" class="breadcrumbs__item">
+                                    Портфолио
+                                </a>
+                                <span class="breadcrumbs__item">
+                                    /
+                                </span>
+                                <span class="breadcrumbs__item">
+                                    Название проекта
+                                </span>
+                            </nav>
+                            Назад
+                        </div>
+                    </div>
+                </section>
+                <%= htmlWebpackPlugin.options.widgets.portfolioDetail %>
+            </div>
+        </main>
+        <%= htmlWebpackPlugin.options.widgets.footer %>
+    </div>
+</body>
+</html>

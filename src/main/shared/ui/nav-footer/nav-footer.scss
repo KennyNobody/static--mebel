@@ -1,0 +1,27 @@
+.nav-footer {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        line-height: 1.6;
+        font-weight: 500;
+    }
+
+    &__list {
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        color: #434956;
+        line-height: 1.6;
+        font-weight: 300;
+        transition: 0.3s all;
+
+        &:hover {
+            color: var(--color-green);
+        }
+    }
+}
