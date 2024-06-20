@@ -1,0 +1,24 @@
+.post-stat {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        display: block;
+    }
+
+    &__caption {
+        color: #A9ABB0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}

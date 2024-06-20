@@ -1,0 +1,118 @@
+.intro-process {
+    width: 100%;
+    position: relative;
+
+    &__decor {
+        position: absolute;
+
+        &--1 {
+            left: -150px;
+            width: 233px;
+            height: 233px;
+            bottom: -45px;
+            display: block;
+            position: absolute;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/process-decor-1.png");
+        }
+
+        &--2 {
+            top: -91px;
+            right: -46px;
+            width: 221px;
+            height: 124px;
+            display: block;
+            position: absolute;
+            background-size: contain;
+            transform: rotate(-28deg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/process-decor-2.png");
+        }
+
+        &--3 {
+            top: 44px;
+            right: -76px;
+            width: 155px;
+            height: 89px;
+            display: block;
+            position: absolute;
+            background-size: contain;
+            transform: rotate(149deg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/process-decor-3.png");
+        }
+    }
+
+    &__content {
+        display: grid;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        grid-auto-flow: dense;
+        box-shadow: 0 30px 60px #50505033;
+        grid-template-rows: minmax(0, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        &:after {
+            top: 55px;
+            left: 59px;
+            z-index: 2;
+            content: "";
+            height: 162px;
+            width: 1045px;
+            display: block;
+            position: absolute;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/process-route.svg");
+        }
+    }
+
+    &__item {
+        position: relative;
+        grid-column: span 1;
+
+        &:after {
+            top: 140px;
+            content: "";
+            z-index: 1;
+            width: 38px;
+            height: 46px;
+            display: block;
+            position: absolute;
+            left: calc(100% - 7px);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+
+        &:first-child {
+            border-radius: 20px 0 0 20px;
+        }
+
+        &:last-child {
+            border-radius: 0 20px 20px 0;
+        }
+
+        &:nth-child(2n + 1) {
+            background-color: #F7F7F7;
+
+            &:after {
+                background-image: url("./assets/images/decor-angle-grey.svg");
+            }
+        }
+
+        &:nth-child(2n) {
+            background-color: var(--color-white);
+
+            &:after {
+                background-image: url("./assets/images/decor-angle-white.svg");
+            }
+        }
+    }
+}

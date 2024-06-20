@@ -1,3 +1,10 @@
 import './icon-ball.svg';
+import './icon-eye-color.svg';
 import './icon-house.svg';
+import './icon-like-color.svg';
 import './icon-login.svg';
+import './icon-plus.svg';
+import './icon-process-check.svg';
+import './icon-process-message.svg';
+import './icon-process-paper.svg';
+import './icon-process-win.svg';

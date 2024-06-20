@@ -1,13 +1,9 @@
-.button {
+.button-icon {
     display: flex;
     cursor: pointer;
-    padding: 0 28px;
-    width: fit-content;
     align-items: center;
-    border-radius: 12px;
     transition: 0.3s all;
     justify-content: center;
-    color: var(--color-white);
     background-color: var(--color-green);
 
     &:hover {
@@ -19,10 +15,20 @@
     }
 
     &--large {
-        height: 62px;
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+
+        .button-icon {
+            &__icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
 
-    &--regular {
-        height: 46px;
+    &__icon {
+        display: block;
+        fill: var(--color-white)
     }
 }

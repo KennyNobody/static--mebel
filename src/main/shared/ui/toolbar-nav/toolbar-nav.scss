@@ -1,0 +1,17 @@
+.toolbar-nav {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        color: #A9ABB0;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &.active {
+            color: var(--color-green);
+        }
+    }
+}
