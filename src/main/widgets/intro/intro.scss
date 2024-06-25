@@ -1,0 +1,18 @@
+.section-intro-reviews {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    &__slide {
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

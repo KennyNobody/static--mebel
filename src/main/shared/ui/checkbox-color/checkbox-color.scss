@@ -1,0 +1,46 @@
+.checkbox-color {
+    cursor: pointer;
+
+    &:hover {
+        .checkbox-color {
+            &__title {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__input {
+        display: none;
+        visibility: hidden;
+
+        &:checked {
+            & + .checkbox-color__wrapper {
+                background-size: 22px 22px;
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-image: url("./assets/images/check-dark.svg");
+            }
+        }
+    }
+
+    &__wrapper {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    &__box {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        border-radius: 4px;
+    }
+
+    &__title {
+        color: #1C222E;
+        font-size: 14px;
+        transition: 0.3s opacity;
+    }
+
+}

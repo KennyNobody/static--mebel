@@ -1,0 +1,16 @@
+.rating {
+    gap: 5px;
+    display: flex;
+
+    &__icon {
+        width: 26px;
+        height: 26px;
+        fill: #C4C4C4;
+        flex-shrink: 0;
+        display: block;
+
+        &.active {
+            fill: var(--color-yellow);
+        }
+    }
+}

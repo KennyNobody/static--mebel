@@ -1,0 +1,45 @@
+.dropdown-filter {
+    width: 100%;
+
+    &__button {
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+        font-weight: 300;
+        min-height: 56px;
+        align-items: center;
+        transition: 0.3s opacity;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        border-bottom: 1px solid #EEEEEE;
+        background-position: right center;
+        background-image: url("./assets/images/arrow-dropdown.svg");
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__content {
+        padding: 20px 0;
+    }
+
+    &__list {
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__grid {
+        gap: 12px;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-rows: minmax(0, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        & > * {
+            column-span: 1;
+        }
+    }
+}

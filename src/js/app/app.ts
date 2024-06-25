@@ -1,4 +1,5 @@
 import {Slider} from "../ui/slider";
+import {Dropdown} from "../ui/dropdown";
 
 class App {
     constructor() {
@@ -6,7 +7,7 @@ class App {
     }
 
     init = () => {
-        console.log('App Inited');
+        this.initDropdown();
         this.initSliders();
     }
 
@@ -14,6 +15,14 @@ class App {
         const elements = document.querySelectorAll('[data-slider]');
 
         elements.forEach((item: Element) => new Slider(item))
+    }
+
+    private initDropdown = () => {
+        const elements: NodeListOf<Element> = document.querySelectorAll('[data-dropdown="block"]');
+
+        elements.forEach((item) => {
+            new Dropdown(item);
+        })
     }
 }
 

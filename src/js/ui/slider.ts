@@ -18,6 +18,8 @@ class Slider {
 
         if (mode === 'intro') this.initIntroSlider(el);
 
+        if (mode === 'reviews') this.initReviewsSlider(el);
+
         if (this.sliderInstance) {
             this.initControls(el);
         }
@@ -48,9 +50,29 @@ class Slider {
         this.sliderInstance = new Swiper(el, {
             loop: false,
             enabled: true,
-            slidesPerView: 'auto',
+            slidesPerView: 7,
             slideActiveClass: 'active',
             spaceBetween: 20,
+            // breakpoints: {
+            //     1299: {
+            //         enabled: false,
+            //     }
+            // },
+            // on: {
+            //     resize: (el: Swiper)=> removeInlineStyles(el)
+            // }
+        });
+    }
+
+    private initReviewsSlider(el: Element): void {
+        this.sliderInstance = new Swiper(el, {
+            loop: false,
+            enabled: true,
+            allowTouchMove: false,
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            slideActiveClass: 'active',
+            spaceBetween: 25,
             // breakpoints: {
             //     1299: {
             //         enabled: false,

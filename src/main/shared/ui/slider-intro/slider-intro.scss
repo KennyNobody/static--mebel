@@ -1,9 +1,62 @@
 .slider-intro {
-    &__wrapper {
+    overflow: visible;
 
+    &__wrapper {
+        padding-top: 15px;
     }
 
     &__slide {
-        width: 164px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s opacity;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+
+            & + .slider-intro__slide {
+                opacity: 1;
+                visibility: visible;
+
+                & + .slider-intro__slide {
+                    opacity: 1;
+                    visibility: visible;
+
+                    & + .slider-intro__slide {
+                        opacity: 1;
+                        visibility: visible;
+
+                        & + .slider-intro__slide {
+                            opacity: 1;
+                            visibility: visible;
+
+                            & + .slider-intro__slide {
+                                opacity: 1;
+                                visibility: visible;
+
+                                & + .slider-intro__slide {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__button {
+        z-index: 2;
+        top: calc(50% - 5px);
+        position: absolute;
+
+        &--left {
+            right: calc(100% + 20px);
+        }
+
+        &--right {
+            left: calc(100% + 20px);
+        }
     }
 }

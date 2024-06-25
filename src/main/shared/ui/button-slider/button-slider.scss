@@ -1,0 +1,20 @@
+.button-slider {
+    display: block;
+    cursor: pointer;
+    transition: 0.3s opacity;
+
+    &[disabled] {
+        opacity: 0.3;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #292D32;
+        display: block;
+    }
+}

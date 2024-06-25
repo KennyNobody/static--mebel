@@ -1,0 +1,38 @@
+.filter-aside {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F6F6F7;
+
+    &__main {
+        gap: 20px;
+        display: flex;
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &__content {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__footer {
+        gap: 15px;
+        display: flex;
+        padding: 30px 20px;
+        flex-direction: column;
+        background-color: #1C222E;
+    }
+
+    &__caption {
+        color: #747D90;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

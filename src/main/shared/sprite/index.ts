@@ -1,4 +1,9 @@
+import './icon-arrow-bottom.svg';
+import './icon-arrow-left.svg';
+import './icon-arrow-right.svg';
+import './icon-arrow-top.svg';
 import './icon-ball.svg';
+import './icon-check.svg';
 import './icon-eye-color.svg';
 import './icon-house.svg';
 import './icon-like-color.svg';
@@ -8,3 +13,4 @@ import './icon-process-check.svg';
 import './icon-process-message.svg';
 import './icon-process-paper.svg';
 import './icon-process-win.svg';
+import './icon-star.svg';

@@ -1,0 +1,48 @@
+.checkbox-text {
+    gap: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        .checkbox-color {
+            &__title {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__input {
+        display: none;
+        visibility: hidden;
+
+        &:checked {
+            & + .checkbox-text__box {
+                background-size: 22px 22px;
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-color: var(--color-green);
+                background-image: url("./assets/images/check-light.svg");
+            }
+        }
+    }
+
+    &__box {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        transition: 0.3s all;
+        border: 1px solid #242D260F;
+    }
+
+    &__title {
+        width: 100%;
+        color: #1C222E;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: 0.3s opacity;
+    }
+
+}

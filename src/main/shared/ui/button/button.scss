@@ -2,20 +2,33 @@
     display: flex;
     cursor: pointer;
     padding: 0 28px;
+    font-weight: 600;
     width: fit-content;
     align-items: center;
     border-radius: 12px;
     transition: 0.3s all;
     justify-content: center;
-    color: var(--color-white);
-    background-color: var(--color-green);
-
-    &:hover {
-        background-color: #29884E;
-    }
 
     &:active {
         opacity: 0.9;
+    }
+
+    &--green {
+        color: var(--color-white);
+        background-color: var(--color-green);
+
+        &:hover {
+            background-color: #29884E;
+        }
+    }
+
+    &--grey {
+        color: var(--color-white);
+        background-color: #313641;
+
+        &:hover {
+            background-color: #3d4a62;
+        }
     }
 
     &--large {

@@ -1,6 +1,7 @@
 @import "./vars/colors";
 @import "./vars/fonts";
 @import "./fonts";
+@import "./global";
 @import "./service/margins";
 @import "./service/paddings";
 @import "./service/align";
@@ -8,7 +9,8 @@
 @import "../main/shared/ui";
 @import "./widgets";
 @import "./pages";
-@import "./global";
+@import "./service/sizes";
+
 
 .icon {
     width: 20px;
