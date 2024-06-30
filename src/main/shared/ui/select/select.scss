@@ -1,0 +1,81 @@
+.select {
+    height: 52px;
+    position: relative;
+
+    &--icon {
+        .select {
+            &__button {
+                padding-left: 36px;
+                background-size: 24px 24px, 16px 16px;
+                background-position: right 10px center, left 10px center;
+                background-image: url("./assets/images/arrow-dropdown.svg"), url("./assets/images/sorting.svg");
+            }
+        }
+    }
+
+    &__button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 300;
+        align-items: center;
+        border-radius: 12px;
+        transition: 0.3s opacity;
+        background-size: 24px 24px;
+        padding: 10px 36px 10px 10px;
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-color: var(--color-white);
+        box-shadow: 0 0 20px 0 rgba(80, 80, 80, 0.1);
+        background-image: url("./assets/images/arrow-dropdown.svg");
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__message {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__content {
+        gap: 12px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        padding: 20px;
+        position: absolute;
+        border-radius: 12px;
+        top: calc(100% + 20px);
+        flex-direction: column;
+        background-color: var(--color-white);
+        box-shadow: 0 0 20px 0 rgba(80, 80, 80, 0.1);
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+
+        &:after {
+            left: 50%;
+            top: -20px;
+            content: "";
+            width: 34px;
+            height: 34px;
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            background-size: 28px 28px;
+            transform: translateX(-50%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/images/arrow-select.svg");
+        }
+    }
+}

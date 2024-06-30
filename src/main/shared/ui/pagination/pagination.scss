@@ -1,0 +1,49 @@
+.pagination {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+        height: 34px;
+        display: flex;
+        flex-shrink: 0;
+        min-width: 34px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s opacity;
+
+        &.active {
+            color: var(--color-white);
+            background-color: var(--color-green);
+        }
+
+        @at-root a#{&} {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        @at-root button#{&} {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &[disabled] {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        fill: #130F26;
+        display: block;
+    }
+}

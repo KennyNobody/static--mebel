@@ -1,0 +1,17 @@
+.toolbar-catalog {
+    display: flex;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+
+    &__search {
+        width: 50%;
+    }
+
+    &__select {
+        width: 30%;
+    }
+
+    &__items {
+        width: 100%;
+    }
+}

@@ -20,6 +20,8 @@ class Slider {
 
         if (mode === 'reviews') this.initReviewsSlider(el);
 
+        if (mode === 'preview') this.initPreviewSlider(el);
+
         if (this.sliderInstance) {
             this.initControls(el);
         }
@@ -53,14 +55,6 @@ class Slider {
             slidesPerView: 7,
             slideActiveClass: 'active',
             spaceBetween: 20,
-            // breakpoints: {
-            //     1299: {
-            //         enabled: false,
-            //     }
-            // },
-            // on: {
-            //     resize: (el: Swiper)=> removeInlineStyles(el)
-            // }
         });
     }
 
@@ -73,15 +67,27 @@ class Slider {
             slidesPerView: 'auto',
             slideActiveClass: 'active',
             spaceBetween: 25,
-            // breakpoints: {
-            //     1299: {
-            //         enabled: false,
-            //     }
-            // },
-            // on: {
-            //     resize: (el: Swiper)=> removeInlineStyles(el)
-            // }
         });
+    }
+
+    private initPreviewSlider(el: Element): void {
+        this.sliderInstance = new Swiper(el, {
+            loop: true,
+            slidesPerView: 1,
+            allowTouchMove: true,
+            modules: [Pagination],
+            slideActiveClass: 'active',
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'active',
+                el: '[data-slider="pagination"]',
+                bulletClass: 'bullets__item',
+                simulateTouch: false,
+                renderBullet: (index: number, className: string) => {
+                    return `<button class="${className}"><span class="bullets__item-content"></span></button>`;
+                },
+            },
+        })
     }
 }
 

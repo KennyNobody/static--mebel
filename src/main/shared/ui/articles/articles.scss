@@ -1,0 +1,17 @@
+.articles {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+
+    }
+
+    &__toolbar {
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

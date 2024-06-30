@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Портфолио - Мебельница</title>
-<link href="css/main.16cb.css" rel="stylesheet"></head>
+<link href="css/main.7cc9.css" rel="stylesheet"></head>
 <body class="body">
     <div class="page">
         <header class="section section--header">
@@ -83,7 +83,7 @@
                             </h3>
                             <div class="filter-aside__content">
                                 <div class="dropdown-filter" data-dropdown="block">
-                                    <button class="dropdown-filter__button" data-dropdown="button">
+                                    <button class="dropdown-filter__button" data-dropdown="button" type="button">
                                         Ценовой сегмент
                                     </button>
                                     <div class="dropdown-filter__content" data-dropdown="content" hidden>
@@ -120,7 +120,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-filter" data-dropdown="block">
-                                    <button class="dropdown-filter__button" data-dropdown="button">
+                                    <button class="dropdown-filter__button" data-dropdown="button" type="button">
                                         Виды мебели
                                     </button>
                                     <div class="dropdown-filter__content" data-dropdown="content" hidden>
@@ -199,7 +199,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-filter" data-dropdown="block">
-                                    <button class="dropdown-filter__button" data-dropdown="button">
+                                    <button class="dropdown-filter__button" data-dropdown="button" type="button">
                                         Виды мебели
                                     </button>
                                     <div class="dropdown-filter__content" data-dropdown="content" hidden>
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-filter" data-dropdown="block">
-                                    <button class="dropdown-filter__button" data-dropdown="button">
+                                    <button class="dropdown-filter__button" data-dropdown="button" type="button">
                                         Стиль
                                     </button>
                                     <div class="dropdown-filter__content" data-dropdown="content" hidden>
@@ -341,12 +341,12 @@
                             <p class="filter-aside__caption">
                                 Нашли 293 кейса
                             </p>
-                            <button class="button button--large button--green full-width">
+                            <button class="button button--large button--green full-width" type="button">
                                 <span class="button__text">
                                     Показать
                                 </span>
                             </button>
-                            <button class="button button--large button--grey full-width">
+                            <button class="button button--large button--grey full-width" type="button">
                                 <span class="button__text">
                                     Сбросить
                                 </span>
@@ -355,7 +355,379 @@
                     </form>
                 </div>
                 <div class="grid__col grid__col--6">
-                    MAIN
+                    <div class="stack stack--20">
+                        <form class="toolbar-catalog">
+                            <div class="toolbar-catalog__search">
+                                <div class="form-search">
+                                    <input type="text" placeholder="Я ищу..." class="form-search__input">
+                                    <button class="form-search__button">
+                                        <svg class="form-search__icon">
+                                            <use href="./assets/sprite/sprite.svg#icon-search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="toolbar-catalog__select">
+                                <div class="select select--icon" data-select="block">
+                                    <button class="select__button" data-select="button" type="button">
+                                        <span class="select__message" data-select="message" data-select-placeholder="Сортировать">Сортировать</span>
+                                    </button>
+                                    <div class="select__content" data-select="content" hidden>
+                                        <label class="radio-text">
+                                            <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По популярности" value="val1">
+                                            <div class="radio-text__box"></div>
+                                            <p class="radio-text__title">
+                                                По популярности
+                                            </p>
+                                        </label>
+                                        <label class="radio-text">
+                                            <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По рейтингу" value="val2">
+                                            <div class="radio-text__box"></div>
+                                            <p class="radio-text__title">
+                                                По рейтингу
+                                            </p>
+                                        </label>
+                                        <label class="radio-text">
+                                            <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По возрастанию цены" value="val2">
+                                            <div class="radio-text__box"></div>
+                                            <p class="radio-text__title">
+                                                По возрастанию цены
+                                            </p>
+                                        </label>
+                                        <label class="radio-text">
+                                            <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По убыванию цены"  value="val2">
+                                            <div class="radio-text__box"></div>
+                                            <p class="radio-text__title">
+                                                По убыванию цены
+                                            </p>
+                                        </label>
+                                        <label class="radio-text">
+                                            <input type="radio" name="sorting" class="radio-text__input" data-select-caption="Сначала выгодные" value="val2">
+                                            <div class="radio-text__box"></div>
+                                            <p class="radio-text__title">
+                                                Сначала выгодные
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toolbar-catalog__items">
+                                <div class="field-group" data-fieldgroup="block">
+                                    <div class="field-group__content" data-fieldgroup="content">
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name1" value="val1" checked>
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name2" value="val2">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name3" value="val3">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name4" value="val4">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name5" value="val5">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name6" value="val6">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name7" value="val7">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name8" value="val8" >
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name9" value="val9">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name10" value="val10">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name11" value="val11">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name12" value="val12">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name13" value="val13">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name14" value="val14">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name15" value="val15">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name16" value="val16">
+                                            <span class="checkbox-tag__main">
+                                                Шкаф-купе
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-tag">
+                                            <input class="checkbox-tag__input" type="checkbox" name="name17" value="val17">
+                                            <span class="checkbox-tag__main">
+                                                Диваны на заказ
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="field-group__toolbar" >
+                                        <button class="button-more" data-fieldgroup="button" type="button">
+                                            <span class="button-more__text button-more__text--static">
+                                                Показать еще
+                                            </span>
+                                            <span class="button-more__text button-more__text--active">
+                                                Скрыть
+                                            </span>
+                                            <svg class="button-more__icon">
+                                                <use href="./assets/sprite/sprite.svg#icon-arrow-more"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="articles">
+                            <div class="articles__main">
+                                <div class="grid grid--6">
+                                    <div class="grid__col grid__col--2">
+                                        <a href="#" class="article-work article-work--regular">
+                                            <picture class="article-work__picture">
+                                                <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                            </picture>
+                                            <div class="article-work__toolbar">
+                                                <div class="article-work__info">
+                                                    <picture class="article-work__logo">
+                                                        <img src="https://placehold.co/200x200" alt="Заголовок">
+                                                    </picture>
+                                                    <p class="article-work__name">
+                                                        Name Company
+                                                    </p>
+                                                </div>
+                                                <div class="article-work__stat">
+                                                    <div class="post-stat">
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                                3569
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                                245
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col--2">
+                                        <a href="#" class="article-work article-work--regular">
+                                            <picture class="article-work__picture">
+                                                <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                            </picture>
+                                            <div class="article-work__toolbar">
+                                                <div class="article-work__info">
+                                                    <picture class="article-work__logo">
+                                                        <img src="https://placehold.co/200x200" alt="Заголовок">
+                                                    </picture>
+                                                    <p class="article-work__name">
+                                                        Name Company
+                                                    </p>
+                                                </div>
+                                                <div class="article-work__stat">
+                                                    <div class="post-stat">
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        3569
+                                                    </span>
+                                                        </div>
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        245
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col--2">
+                                        <a href="#" class="article-work article-work--regular">
+                                            <picture class="article-work__picture">
+                                                <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                            </picture>
+                                            <div class="article-work__toolbar">
+                                                <div class="article-work__info">
+                                                    <picture class="article-work__logo">
+                                                        <img src="https://placehold.co/200x200" alt="Заголовок">
+                                                    </picture>
+                                                    <p class="article-work__name">
+                                                        Name Company
+                                                    </p>
+                                                </div>
+                                                <div class="article-work__stat">
+                                                    <div class="post-stat">
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        3569
+                                                    </span>
+                                                        </div>
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        245
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col--2">
+                                        <a href="#" class="article-work article-work--regular">
+                                            <picture class="article-work__picture">
+                                                <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                            </picture>
+                                            <div class="article-work__toolbar">
+                                                <div class="article-work__info">
+                                                    <picture class="article-work__logo">
+                                                        <img src="https://placehold.co/200x200" alt="Заголовок">
+                                                    </picture>
+                                                    <p class="article-work__name">
+                                                        Name Company
+                                                    </p>
+                                                </div>
+                                                <div class="article-work__stat">
+                                                    <div class="post-stat">
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        3569
+                                                    </span>
+                                                        </div>
+                                                        <div class="post-stat__item">
+                                                            <svg class="post-stat__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                            </svg>
+                                                            <span class="post-stat__caption">
+                                                        245
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="articles__toolbar">
+                                <div class="button button--green button--regular">
+                                    <span class="button__text">
+                                        Показать еще
+                                    </span>
+                                </div>
+                                <div class="pagination">
+                                    <button class="pagination__button" disabled>
+                                        <svg class="pagination__icon">
+                                            <use href="./assets/sprite/sprite.svg#icon-pagination-prev"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="pagination__button active">
+                                        1
+                                    </button>
+                                    <button class="pagination__button">
+                                        2
+                                    </button>
+                                    <button class="pagination__button">
+                                        3
+                                    </button>
+                                    <button class="pagination__button">
+                                        4
+                                    </button>
+                                    <button class="pagination__button">
+                                        5
+                                    </button>
+                                    <span class="pagination__button">
+                                        ...
+                                    </span>
+                                    <button class="pagination__button">
+                                        123
+                                    </button>
+                                    <button class="pagination__button">
+                                        <svg class="pagination__icon">
+                                            <use href="./assets/sprite/sprite.svg#icon-pagination-next"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -446,5 +818,5 @@
 </footer>
 
     </div>
-<script defer src="bundle.2033.js"></script></body>
+<script defer src="bundle.e86b.js"></script></body>
 </html>

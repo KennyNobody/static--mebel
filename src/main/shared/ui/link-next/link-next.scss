@@ -1,0 +1,45 @@
+.link-next {
+    gap: 7px;
+    display: flex;
+    min-height: 32px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        .link-next {
+            &__circle {
+                background-color: var(--color-green);
+            }
+
+            &__icon {
+                fill: var(--color-white);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        color: var(--color-green);
+    }
+
+    &__circle {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        border-radius: 50px;
+        transition: 0.3s all;
+        justify-content: center;
+        background-color: #34B16666;
+    }
+
+    &__icon {
+        width: 5px;
+        height: 10px;
+        display: block;
+        flex-shrink: 0;
+        transition: 0.3s all;
+        fill: var(--color-green);
+    }
+}

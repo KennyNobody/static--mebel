@@ -1,0 +1,11 @@
+.link-tooltip {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    transition: 0.3s all;
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-green);
+    }
+}

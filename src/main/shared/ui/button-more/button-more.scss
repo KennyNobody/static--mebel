@@ -1,0 +1,51 @@
+.button-more {
+    gap: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px 4px 8px 0;
+
+    &.active {
+        .button-more {
+            &__text {
+                &--static {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                &--active {
+                    display: block;
+                    visibility: visible;
+                }
+            }
+
+            &__icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__text {
+        flex-shrink: 0;
+        line-height: 1;
+        font-size: 14px;
+
+        &--static {
+
+        }
+
+        &--active {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        fill: #1C222E;
+        display: block;
+        flex-shrink: 0;
+        transition: 0.3s all;
+    }
+}

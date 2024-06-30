@@ -1,0 +1,23 @@
+.checkbox-tag {
+    flex-shrink: 0;
+    display: flex;
+
+    &__input {
+        &:checked {
+            & + .checkbox-tag__main {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+        }
+    }
+
+    &__main {
+        line-height: 1;
+        font-size: 14px;
+        padding: 9px 11px;
+        border-radius: 8px;
+        transition: 0.3s all;
+        color: var(--color-green);
+        background-color: #EBF9F1;
+    }
+}

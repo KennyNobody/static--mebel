@@ -1,0 +1,25 @@
+.slider-preview {
+    overflow: hidden;
+    border-radius: 20px;
+
+    &__wrapper {
+
+    }
+
+    &__slide {
+
+
+        img {
+            display: block;
+        }
+    }
+
+    &__pagination {
+        left: 0;
+        right: 0;
+        z-index: 1;
+        bottom: 10px;
+        padding: 0 30px;
+        position: absolute;
+    }
+}

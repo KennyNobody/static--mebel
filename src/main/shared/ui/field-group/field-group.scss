@@ -1,0 +1,42 @@
+.field-group {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        gap: 8px;
+        display: flex;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+        }
+    }
+
+    &__toolbar {
+
+    }
+
+    &.active {
+        .field-group {
+            &__content {
+                flex-wrap: wrap;
+
+                &:after {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
