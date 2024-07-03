@@ -2,7 +2,10 @@
     gap: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    &--center {
+        justify-content: center;
+    }
 
     &__item {
         width: 64px;

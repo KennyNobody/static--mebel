@@ -1,0 +1,66 @@
+.aside-profile {
+    display: flex;
+    border-radius: 20px;
+    padding: 0 20px 40px;
+    flex-direction: column;
+    background-color: var(--color-white);
+
+    &--offset {
+        transform: translateY(-195px);
+    }
+
+    &__header {
+        width: fit-content;
+        margin: -60px auto 20px;
+    }
+
+    &__avatar {
+        width: 156px;
+        height: 156px;
+        display: block;
+        overflow: hidden;
+        border-radius: 150px;
+        border: 8px solid var(--color-white);
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__name {
+        color: #130F26;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__location {
+        margin-bottom: 30px;
+    }
+
+    &__main {
+
+    }
+
+    &__controls {
+        gap: 14px;
+        display: flex;
+        margin-bottom: 18px;
+        flex-direction: column;
+    }
+
+    &__stat {
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,26 @@
+.line-info {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        display: block;
+        fill: var(--color-green);
+    }
+
+    &__title {
+        flex-grow: 1;
+        color: #434956;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__value {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

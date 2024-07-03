@@ -1,0 +1,32 @@
+.nav-tab {
+    gap: 14px;
+    display: flex;
+    padding: 18px;
+    width: fit-content;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #F3F3F4;
+
+    &__link {
+        height: 44px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 22px;
+        border-radius: 8px;
+        align-items: center;
+        transition: 0.3s all;
+        justify-content: center;
+        background-color: #1C222E1A;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &.active {
+            pointer-events: none;
+            color: var(--color-green);
+            background-color: #1C222E;
+        }
+    }
+}

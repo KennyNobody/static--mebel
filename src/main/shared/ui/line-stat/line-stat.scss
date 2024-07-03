@@ -1,0 +1,19 @@
+.line-stat {
+    gap: 20px;
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #E7EAF0;
+
+    span {
+        color: #434956;
+        font-size: 14px;
+    }
+
+    strong {
+        color: #130F26;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

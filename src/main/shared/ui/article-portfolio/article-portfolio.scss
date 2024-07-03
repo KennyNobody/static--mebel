@@ -1,0 +1,62 @@
+.article-portfolio {
+    position: relative;
+
+    &:hover,
+    &:focus-within {
+        .article-portfolio {
+            &__content {
+                opacity: 1;
+            }
+
+            &__tooltip {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    &__picture {
+        display: block;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__content {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        padding: 14px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        transition: 0.3s opacity;
+        justify-content: flex-end;
+        background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--color-white);
+    }
+
+    &__tooltip {
+        top: 14px;
+        opacity: 0;
+        right: 14px;
+        position: absolute;
+        transition: 0.3s opacity;
+    }
+}

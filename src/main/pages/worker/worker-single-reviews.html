@@ -2,17 +2,388 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Отзывы - Мебельщики</title>
 </head>
 <body class="body">
-    <div class="page">
-        <%= htmlWebpackPlugin.options.widgets.header %>
-        <main class="main main--intro">
-            <%= htmlWebpackPlugin.options.widgets.introSignIn %>
-<!--            <img class="image" src="./assets/images/404.webp" alt="">-->
-        </main>
-        <%= htmlWebpackPlugin.options.widgets.footer %>
-
-    </div>
+<div class="page">
+    <%= htmlWebpackPlugin.options.widgets.header %>
+    <main class="main main--regular main--decor pb-160">
+        <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
+        <div class="main__section">
+            <section class="section mb-310">
+                <div class="container">
+                    <nav class="breadcrumbs">
+                        <a href="./" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span class="breadcrumbs__item">
+                            /
+                        </span>
+                        <a href="./workers.html" class="breadcrumbs__item">
+                            Мебельщики
+                        </a>
+                        <span class="breadcrumbs__item">
+                            /
+                        </span>
+                        <span class="breadcrumbs__item">
+                            Портфолио
+                        </span>
+                    </nav>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__col grid__col--2">
+                            <%= htmlWebpackPlugin.options.widgets.asideProfile %>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="stack stack--20">
+                                <nav class="nav-tab">
+                                    <a href="./worker-single-info.html" class="nav-tab__link">
+                                        Данные
+                                    </a>
+                                    <a href="./worker-single-portfolio.html" class="nav-tab__link">
+                                        Портфолио
+                                    </a>
+                                    <a href="./worker-single-reviews.html" class="nav-tab__link active">
+                                        Отзывы
+                                    </a>
+                                </nav>
+                                <div class="grid">
+                                    <div class="grid__col grid__col--3">
+                                        <div class="select select--icon" data-select="block">
+                                            <button class="select__button" data-select="button" type="button">
+                                                <span class="select__message" data-select="message" data-select-placeholder="Сортировать">Сортировать</span>
+                                            </button>
+                                            <div class="select__content" data-select="content" hidden>
+                                                <label class="radio-text">
+                                                    <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По популярности" value="val1">
+                                                    <div class="radio-text__box"></div>
+                                                    <p class="radio-text__title">
+                                                        По популярности
+                                                    </p>
+                                                </label>
+                                                <label class="radio-text">
+                                                    <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По рейтингу" value="val2">
+                                                    <div class="radio-text__box"></div>
+                                                    <p class="radio-text__title">
+                                                        По рейтингу
+                                                    </p>
+                                                </label>
+                                                <label class="radio-text">
+                                                    <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По возрастанию цены" value="val2">
+                                                    <div class="radio-text__box"></div>
+                                                    <p class="radio-text__title">
+                                                        По возрастанию цены
+                                                    </p>
+                                                </label>
+                                                <label class="radio-text">
+                                                    <input type="radio" name="sorting" class="radio-text__input" data-select-caption="По убыванию цены"  value="val2">
+                                                    <div class="radio-text__box"></div>
+                                                    <p class="radio-text__title">
+                                                        По убыванию цены
+                                                    </p>
+                                                </label>
+                                                <label class="radio-text">
+                                                    <input type="radio" name="sorting" class="radio-text__input" data-select-caption="Сначала выгодные" value="val2">
+                                                    <div class="radio-text__box"></div>
+                                                    <p class="radio-text__title">
+                                                        Сначала выгодные
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="articles">
+                                    <div class="articles__main">
+                                        <div class="grid grid--6">
+                                            <div class="grid__col grid__col--3">
+                                                <article class="article-review-catalog">
+                                                    <div class="head-person">
+                                                        <picture class="head-person__picture">
+                                                            <svg class="head-person__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
+                                                            </svg>
+                                                        </picture>
+                                                        <h3 class="head-person__name">
+                                                            Имя Фамилия
+                                                        </h3>
+                                                        <div class="rating rating--medium">
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-review-catalog__info">
+                                                        <span class="article-review-catalog__work">
+                                                            Шкаф
+                                                        </span>
+                                                        <span class="article-review-catalog__service">
+                                                            Весь комплекс услуг
+                                                        </span>
+                                                    </div>
+                                                    <div class="article-review-catalog__editor">
+                                                        <div class="editor">
+                                                            <p>
+                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="preview-gallery">
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                    </div>
+                                                    <time class="article-review-catalog__time">
+                                                        10.07.2023 14:46
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--3">
+                                                <article class="article-review-catalog">
+                                                    <div class="head-person">
+                                                        <picture class="head-person__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="">
+                                                        </picture>
+                                                        <h3 class="head-person__name">
+                                                            Имя Фамилия
+                                                        </h3>
+                                                        <div class="rating rating--medium">
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-review-catalog__info">
+                                                        <span class="article-review-catalog__work">
+                                                            Шкаф
+                                                        </span>
+                                                        <span class="article-review-catalog__service">
+                                                            Весь комплекс услуг
+                                                        </span>
+                                                    </div>
+                                                    <div class="article-review-catalog__editor">
+                                                        <div class="editor">
+                                                            <p>
+                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="preview-gallery">
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                    </div>
+                                                    <time class="article-review-catalog__time">
+                                                        10.07.2023 14:46
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--3">
+                                                <article class="article-review-catalog">
+                                                    <div class="head-person">
+                                                        <picture class="head-person__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="">
+                                                        </picture>
+                                                        <h3 class="head-person__name">
+                                                            Имя Фамилия
+                                                        </h3>
+                                                        <div class="rating rating--medium">
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-review-catalog__info">
+                                                        <span class="article-review-catalog__work">
+                                                            Шкаф
+                                                        </span>
+                                                        <span class="article-review-catalog__service">
+                                                            Весь комплекс услуг
+                                                        </span>
+                                                    </div>
+                                                    <div class="article-review-catalog__editor">
+                                                        <div class="editor">
+                                                            <p>
+                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="preview-gallery">
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                    </div>
+                                                    <time class="article-review-catalog__time">
+                                                        10.07.2023 14:46
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--3">
+                                                <article class="article-review-catalog">
+                                                    <div class="head-person">
+                                                        <picture class="head-person__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="">
+                                                        </picture>
+                                                        <h3 class="head-person__name">
+                                                            Имя Фамилия
+                                                        </h3>
+                                                        <div class="rating rating--medium">
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-review-catalog__info">
+                                                        <span class="article-review-catalog__work">
+                                                            Шкаф
+                                                        </span>
+                                                        <span class="article-review-catalog__service">
+                                                            Весь комплекс услуг
+                                                        </span>
+                                                    </div>
+                                                    <div class="article-review-catalog__editor">
+                                                        <div class="editor">
+                                                            <p>
+                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="preview-gallery">
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                        <a href="" class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </a>
+                                                    </div>
+                                                    <time class="article-review-catalog__time">
+                                                        10.07.2023 14:46
+                                                    </time>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="articles__toolbar">
+                                        <div class="button button--green button--regular">
+                                            <span class="button__text">
+                                                Показать еще
+                                            </span>
+                                        </div>
+                                        <div class="pagination">
+                                            <button class="pagination__button" disabled>
+                                                <svg class="pagination__icon">
+                                                    <use href="./assets/sprite/sprite.svg#icon-pagination-prev"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="pagination__button active">
+                                                1
+                                            </button>
+                                            <button class="pagination__button">
+                                                2
+                                            </button>
+                                            <button class="pagination__button">
+                                                3
+                                            </button>
+                                            <button class="pagination__button">
+                                                4
+                                            </button>
+                                            <button class="pagination__button">
+                                                5
+                                            </button>
+                                            <span class="pagination__button">
+                                                ...
+                                            </span>
+                                            <button class="pagination__button">
+                                                123
+                                            </button>
+                                            <button class="pagination__button">
+                                                <svg class="pagination__icon">
+                                                    <use href="./assets/sprite/sprite.svg#icon-pagination-next"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%= htmlWebpackPlugin.options.widgets.footer %>
+</div>
 </body>
 </html>

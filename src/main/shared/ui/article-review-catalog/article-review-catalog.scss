@@ -1,0 +1,39 @@
+.article-review-catalog {
+    gap: 20px;
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #F3F3F4;
+
+    &__info {
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__work {
+        color: #3B374E;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__service {
+        color: #C4C4C4;
+        font-size: 16px;
+    }
+
+    &__editor {
+        color: #434956;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__time {
+        color: #C4C4C4;
+        font-size: 16px;
+    }
+}

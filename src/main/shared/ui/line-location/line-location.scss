@@ -1,0 +1,20 @@
+.line-location {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #8C8C8C;
+        flex-shrink: 0;
+        display: block;
+    }
+
+    &__text {
+        color: #8C8C8C;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

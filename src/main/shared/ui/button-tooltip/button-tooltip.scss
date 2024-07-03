@@ -8,6 +8,22 @@
     transition: 0.3s all;
     justify-content: center;
 
+    &--light {
+        .button-tooltip {
+            &__icon {
+                fill: var(--color-white);
+            }
+        }
+    }
+
+    &--dark {
+        .button-tooltip {
+            &__icon {
+                fill: #1C222E;
+            }
+        }
+    }
+
     &:hover {
         .button-tooltip {
             &__icon {
@@ -19,7 +35,6 @@
     &__icon {
         width: 100%;
         height: 100%;
-        fill: #1C222E;
         transition: 0.3s all;
     }
 }

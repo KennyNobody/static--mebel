@@ -2,9 +2,25 @@
     gap: 5px;
     display: flex;
 
+    &--large {
+        .rating {
+            &__icon {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+
+    &--medium {
+        .rating {
+            &__icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
     &__icon {
-        width: 26px;
-        height: 26px;
         fill: #C4C4C4;
         flex-shrink: 0;
         display: block;

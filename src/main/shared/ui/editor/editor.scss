@@ -1,0 +1,11 @@
+.editor {
+    font-weight: 300;
+
+    & > * {
+        margin-bottom: 1em;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

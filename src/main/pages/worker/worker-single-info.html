@@ -2,14 +2,63 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Данные - Мебельщики</title>
 </head>
 <body class="body">
     <div class="page">
         <%= htmlWebpackPlugin.options.widgets.header %>
-        <main class="main main--intro">
-            <%= htmlWebpackPlugin.options.widgets.introSignIn %>
-<!--            <img class="image" src="./assets/images/404.webp" alt="">-->
+        <main class="main main--regular main--decor pb-160">
+            <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
+            <div class="main__section">
+                <section class="section mb-310">
+                    <div class="container">
+                        <nav class="breadcrumbs">
+                            <a href="./" class="breadcrumbs__item">
+                                Главная
+                            </a>
+                            <span class="breadcrumbs__item">
+                                /
+                            </span>
+                            <a href="./workers.html" class="breadcrumbs__item">
+                                Мебельщики
+                            </a>
+                            <span class="breadcrumbs__item">
+                                /
+                            </span>
+                            <span class="breadcrumbs__item">
+                                Портфолио
+                            </span>
+                        </nav>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="grid__col grid__col--2">
+                                <%= htmlWebpackPlugin.options.widgets.asideProfile %>
+                            </div>
+                            <div class="grid__col grid__col--6">
+                                <div class="stack stack--30">
+                                    <nav class="nav-tab">
+                                        <a href="./worker-single-info.html" class="nav-tab__link active">
+                                            Данные
+                                        </a>
+                                        <a href="./worker-single-portfolio.html" class="nav-tab__link">
+                                            Портфолио
+                                        </a>
+                                        <a href="./worker-single-reviews.html" class="nav-tab__link">
+                                            Отзывы
+                                        </a>
+                                    </nav>
+                                    <span>
+                                        Описание
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <%= htmlWebpackPlugin.options.widgets.footer %>
     </div>

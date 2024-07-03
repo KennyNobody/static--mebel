@@ -2,16 +2,363 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Портфолио - Мебельница</title>
 </head>
 <body class="body">
-    <div class="page">
-        <%= htmlWebpackPlugin.options.widgets.header %>
-        <main class="main main--intro">
-            <%= htmlWebpackPlugin.options.widgets.introSignIn %>
-<!--            <img class="image" src="./assets/images/404.webp" alt="">-->
-        </main>
-        <%= htmlWebpackPlugin.options.widgets.footer %>
-    </div>
+<div class="page">
+    <%= htmlWebpackPlugin.options.widgets.header %>
+    <main class="main main--regular main--decor pb-160">
+        <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
+        <div class="main__section">
+            <section class="section mb-310">
+                <div class="container">
+                    <nav class="breadcrumbs">
+                        <a href="./" class="breadcrumbs__item">
+                            Главная
+                        </a>
+                        <span class="breadcrumbs__item">
+                            /
+                        </span>
+                        <a href="./workers.html" class="breadcrumbs__item">
+                            Мебельщики
+                        </a>
+                        <span class="breadcrumbs__item">
+                            /
+                        </span>
+                        <span class="breadcrumbs__item">
+                            Портфолио
+                        </span>
+                    </nav>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__col grid__col--2">
+                            <%= htmlWebpackPlugin.options.widgets.asideProfile %>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="stack stack--20">
+                                <nav class="nav-tab">
+                                    <a href="./worker-single-info.html" class="nav-tab__link">
+                                        Данные
+                                    </a>
+                                    <a href="./worker-single-portfolio.html" class="nav-tab__link active">
+                                        Портфолио
+                                    </a>
+                                    <a href="./worker-single-reviews.html" class="nav-tab__link">
+                                        Отзывы
+                                    </a>
+                                </nav>
+                                <div class="grid">
+                                    <div class="grid__col grid__col--3">
+                                        <div class="select" data-select="block">
+                                            <button class="select__button" data-select="button" type="button">
+                                                <span class="select__message" data-select="message" data-select-placeholder="Сортировать">Сортировать</span>
+                                            </button>
+                                            <div class="select__content" data-select="content" hidden>
+                                                <label class="checkbox-text">
+                                                    <input type="checkbox" class="checkbox-text__input" name="work" value="val1" data-select-caption="Кухня">
+                                                    <div class="checkbox-text__box"></div>
+                                                    <p class="checkbox-text__title">
+                                                        Кухня
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox-text">
+                                                    <input type="checkbox" class="checkbox-text__input" name="work" value="val2" data-select-caption="Полка">
+                                                    <div class="checkbox-text__box"></div>
+                                                    <p class="checkbox-text__title">
+                                                        Полка
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox-text">
+                                                    <input type="checkbox" class="checkbox-text__input" name="work" value="val3" data-select-caption="Прихожая">
+                                                    <div class="checkbox-text__box"></div>
+                                                    <p class="checkbox-text__title">
+                                                        Прихожая
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox-text">
+                                                    <input type="checkbox" class="checkbox-text__input" name="work" value="val4" data-select-caption="Диван">
+                                                    <div class="checkbox-text__box"></div>
+                                                    <p class="checkbox-text__title">
+                                                        Диван
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="articles">
+                                    <div class="articles__main">
+                                        <div class="grid grid--6">
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="grid__col grid__col--2">
+                                                <article class="article-portfolio">
+                                                    <a href="" class="article-portfolio__link">
+                                                        <picture class="article-portfolio__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="Заголовок">
+                                                        </picture>
+                                                        <div class="article-portfolio__content">
+                                                            <h4 class="article-portfolio__title">
+                                                                Гардеробная с подсветкой
+                                                            </h4>
+                                                        </div>
+                                                    </a>
+
+                                                    <div class="article-portfolio__tooltip">
+                                                        <div class="tooltip tooltip--vertical" data-tooltip="block">
+                                                            <div class="tooltip__control">
+                                                                <button class="button-tooltip button-tooltip--light" data-tooltip="button">
+                                                                    <svg class="button-tooltip__icon">
+                                                                        <use href="./assets/sprite/sprite.svg#icon-dots-vertical"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="tooltip__content" data-tooltip="content" hidden>
+                                                                <div class="stack stack--14">
+                                                                    <a href="" class="link-tooltip">
+                                                                        Заказать похожее
+                                                                    </a>
+                                                                    <a href="" class="link-tooltip">
+                                                                        Смотреть
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="articles__toolbar">
+                                        <div class="button button--green button--regular">
+                                            <span class="button__text">
+                                                Показать еще
+                                            </span>
+                                        </div>
+                                        <div class="pagination">
+                                            <button class="pagination__button" disabled>
+                                                <svg class="pagination__icon">
+                                                    <use href="./assets/sprite/sprite.svg#icon-pagination-prev"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="pagination__button active">
+                                                1
+                                            </button>
+                                            <button class="pagination__button">
+                                                2
+                                            </button>
+                                            <button class="pagination__button">
+                                                3
+                                            </button>
+                                            <button class="pagination__button">
+                                                4
+                                            </button>
+                                            <button class="pagination__button">
+                                                5
+                                            </button>
+                                            <span class="pagination__button">
+                                                ...
+                                            </span>
+                                            <button class="pagination__button">
+                                                123
+                                            </button>
+                                            <button class="pagination__button">
+                                                <svg class="pagination__icon">
+                                                    <use href="./assets/sprite/sprite.svg#icon-pagination-next"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%= htmlWebpackPlugin.options.widgets.footer %>
+</div>
 </body>
 </html>

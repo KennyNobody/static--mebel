@@ -36,6 +36,12 @@
         &:hover {
             background-color: #3d4a62;
         }
+
+        .button {
+            &__icon {
+                fill: var(--color-white);
+            }
+        }
     }
 
     &--large {
