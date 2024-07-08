@@ -12,6 +12,7 @@ import './icon-dots.svg';
 import './icon-dots-vertical.svg';
 import './icon-eye-color.svg';
 import './icon-house.svg';
+import './icon-invalid.svg';
 import './icon-like-color.svg';
 import './icon-location.svg';
 import './icon-login.svg';

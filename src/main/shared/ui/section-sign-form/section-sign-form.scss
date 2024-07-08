@@ -1,0 +1,126 @@
+.section-sign-form {
+    position: relative;
+
+    &--style-1 {
+        .section-sign-form {
+            &__layer {
+                width: 65%;
+            }
+
+            &__picture {
+                right: -186px;
+                width: 1042px;
+                height: 1080px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    &--style-2 {
+        .section-sign-form {
+            &__layer {
+                width: 100%;
+            }
+
+            &__picture {
+                right: 90px;
+                width: 722px;
+                height: 100%;
+
+                img {
+                    object-position: bottom center;
+                }
+            }
+        }
+    }
+
+    &--style-3 {
+        .section-sign-form {
+            &__layer {
+                width: 100%;
+            }
+
+            &__picture {
+                right: 300px;
+                width: 596px;
+                height: 100%;
+
+                img {
+                    object-position: bottom center;
+                }
+            }
+        }
+    }
+
+    &__bg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        position: absolute;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        &:after {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #130F2699;
+        }
+    }
+
+    &__layer {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: block;
+        position: absolute;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    &__container {
+        display: flex;
+        height: 100vh;
+        min-height: 1000px;
+        max-height: 1200px;
+        position: relative;
+        align-items: center;
+    }
+
+    &__content {
+        width: 360px;
+    }
+
+    &__picture {
+        top: 50%;
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        transform: translateY(-50%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
+    }
+}

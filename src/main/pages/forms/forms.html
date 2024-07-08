@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body class="body">
+<div class="page">
+    <%= htmlWebpackPlugin.options.widgets.header %>
+    <style>
+        .section-demo {
+            min-height: 100vh;
+            padding: 280px 0;
+            background-color: #1C222E;
+        }
+    </style>
+    <main class="main pb-160">
+        <div class="main__section">
+            <section class="section section-demo">
+                <div class="container">
+                    <div class="stack stack--60">
+                        <div style="width: 360px;">
+                            <div class="form-card">
+                                <div class="form-card__header">
+                                    <div class="form-card__head-toolbar">
+                                        <span class="active">Регистрация</span>
+                                        <span>/</span>
+                                        <a href="">Вход</a>
+                                    </div>
+                                </div>
+                                <div class="form-card__main">
+                                    <label class="input-ui">
+                                        <div class="input-ui__wrapper">
+                                            <input type="text" class="input-ui__field" placeholder="" >
+                                            <p class="input-ui__title">
+                                                Email
+                                            </p>
+                                        </div>
+                                        <div class="input-ui__footer"></div>
+                                    </label>
+                                    <label class="input-ui">
+                                        <div class="input-ui__wrapper">
+                                            <input type="text" class="input-ui__field" placeholder="">
+                                            <p class="input-ui__title">
+                                                Пароль
+                                            </p>
+                                        </div>
+                                        <div class="input-ui__footer">
+                                            Пароль некорректен
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-card__controls">
+                                    <div class="stack stack--14">
+                                        <div class="stack stack--8">
+                                            <button class="button button--green button--large full-width" type="button">
+                                                <span class="button__text">
+                                                    Войти
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <button class="button-minor full-width" type="button">
+                                            Забыли пароль?
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 360px;">
+                            <div class="form-card">
+                                <div class="form-card__header">
+                                    <div class="form-card__head-toolbar">
+                                        <span class="active">Регистрация</span>
+                                        <span>/</span>
+                                        <a href="">Вход</a>
+                                    </div>
+                                </div>
+                                <div class="form-card__main">
+                                    <label class="input-ui valid">
+                                        <div class="input-ui__wrapper">
+                                            <input type="text" class="input-ui__field" placeholder="" value="Фамилия">
+                                            <p class="input-ui__title">
+                                                Фамилия
+                                            </p>
+                                        </div>
+                                        <div class="input-ui__footer"></div>
+                                    </label>
+                                    <label class="input-ui invalid">
+                                        <div class="input-ui__wrapper">
+                                            <input type="text" class="input-ui__field valid" placeholder="">
+                                            <p class="input-ui__title">
+                                                Имя
+                                            </p>
+                                        </div>
+                                        <div class="input-ui__footer">
+                                            <div class="input-message invalid">
+                                                <svg class="input-message__icon">
+                                                    <use href="./assets/sprite/sprite.svg#icon-invalid"></use>
+                                                </svg>
+                                                <p class="input-message__text">
+                                                    Текст ошибки
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="input-ui">
+                                        <div class="input-ui__wrapper">
+                                            <input type="text" class="input-ui__field valid" placeholder="">
+                                            <p class="input-ui__title">
+                                                +7 (000) 000-00-00
+                                            </p>
+                                        </div>
+                                        <div class="input-ui__footer"></div>
+                                    </label>
+                                </div>
+                                <div class="form-card__inputs">
+                                    <label class="checkbox-text">
+                                        <input type="checkbox" class="checkbox-text__input" name="mode" value="worker">
+                                        <div class="checkbox-text__box"></div>
+                                        <p class="checkbox-text__title">
+                                            Мебельщик
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="form-card__controls">
+                                    <div class="stack stack--14">
+                                        <div class="stack stack--8">
+                                            <button class="button button--green button--large full-width" type="button">
+                                                <span class="button__text">
+                                                    Продолжить
+                                                </span>
+                                            </button>
+                                            <p class="caption-form">
+                                                Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на обработку персональных данных.
+                                            </p>
+                                        </div>
+
+                                        <button class="button-minor full-width" type="button">
+                                            Забыли пароль?
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%= htmlWebpackPlugin.options.widgets.footer %>
+</div>
+</body>
+</html>
