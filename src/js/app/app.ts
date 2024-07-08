@@ -5,6 +5,7 @@ import {Fieldgroup} from "../ui/fieldgroup";
 import {Tooltip} from "../ui/tooltip";
 import {SyncSlider} from "../ui/syncSlider";
 import { Fancybox } from "@fancyapps/ui";
+import {Input} from "../ui/input";
 
 class App {
     constructor() {
@@ -19,6 +20,7 @@ class App {
         this.initSelect();
         this.initTooltip();
         this.initFancybox();
+        this.initForms();
     }
 
     private initSliders = (el?: Element) => {
@@ -84,6 +86,12 @@ class App {
                 Navigation: false,
             },
         });
+    }
+
+    private initForms = () => {
+        const elements: NodeListOf<Element> = document.querySelectorAll('[data-input="block"]');
+
+        elements.forEach((item) => new Input(item));
     }
 }
 

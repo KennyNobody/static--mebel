@@ -9,7 +9,7 @@ import './icon-bag.svg';
 import './icon-ball.svg';
 import './icon-calendar.svg';
 import './icon-check.svg';
-import './icon-close.svg';git
+import './icon-close.svg';
 import './icon-comments.svg';
 import './icon-dots.svg';
 import './icon-dots-vertical.svg';
@@ -19,6 +19,7 @@ import './icon-favorite-empty.svg';
 import './icon-favorite-fill.svg';
 import './icon-house.svg';
 import './icon-like.svg';
+import './icon-invalid.svg';
 import './icon-like-color.svg';
 import './icon-location.svg';
 import './icon-login.svg';

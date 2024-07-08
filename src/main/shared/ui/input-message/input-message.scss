@@ -1,0 +1,41 @@
+.input-message {
+    gap: 4px;
+    display: flex;
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    &__button {
+
+    }
+
+    &.invalid {
+        .input-message {
+            &__icon {
+                fill: #E52222;
+            }
+
+            &__text {
+                color: #E52222;
+            }
+        }
+    }
+
+    &__message {
+        display: none;
+        visibility: hidden;
+
+        &:not(:empty) {
+            display: block;
+            visibility: visible;
+        }
+
+    }
+}

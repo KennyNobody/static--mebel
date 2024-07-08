@@ -1,0 +1,78 @@
+.form-card {
+    gap: 30px;
+    display: flex;
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: var(--color-white);
+
+    &--fix-height {
+        min-height: 550px;
+    }
+
+    &__header {
+
+    }
+
+    &__head-toolbar {
+        gap: 12px;
+        display: flex;
+        color: #A9ABB0;
+        font-size: 18px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        a {
+            color: inherit;
+            transition: 0.3s all;
+
+            &:hover {
+                color: var(--color-green);
+            }
+        }
+
+        & > .active {
+            color: var(--color-green);
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--color-green);
+        text-transform: uppercase;
+    }
+
+    &__message {
+        color: #3B374E;
+        font-size: 16px;
+        font-weight: 300;
+
+        & :last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__main {
+        gap: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__controls {
+
+    }
+
+    &__pagination {
+        width: 130px;
+        margin: 0 auto;
+    }
+}

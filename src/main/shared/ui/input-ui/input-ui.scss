@@ -1,0 +1,118 @@
+.input-ui {
+    gap: 8px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+
+    &.valid {
+        .input-ui {
+            &__title {
+                color: var(--color-green);
+            }
+
+            &__field {
+                border-color: var(--color-green);
+            }
+        }
+    }
+
+    &.invalid {
+        .input-ui {
+            &__title,
+            &__footer {
+                color: #E52222;
+            }
+
+            &__footer {
+                background-size: 16px 16px;
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-image: url("./assets/images/invalid-mark.svg");
+            }
+
+            &__field {
+                border-color: #E5222233;
+            }
+        }
+    }
+
+    &--password {
+        .input-ui {
+            &__field {
+                padding: 0 40px 0 12px;
+            }
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__title {
+        left: 0;
+        top: 50%;
+        color: #C4C4C4;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 1px 10px;
+        position: absolute;
+        transition: 0.3s all;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    &__field {
+        width: 100%;
+        height: 50px;
+        display: block;
+        padding: 0 12px;
+        border-radius: 12px;
+        border: 1px solid #A9ABB0;
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            & + .input-ui__title {
+                top: calc(-50% + 4px);
+                left: 12px;
+                transform: translateY(50%);
+                background-color: var(--color-white);
+            }
+        }
+    }
+
+    &__footer {
+        display: none;
+        font-size: 12px;
+        min-height: 16px;
+        padding-left: 20px;
+        visibility: hidden;
+
+         &:not(:empty) {
+             display: block;
+             visibility: visible;
+         }
+    }
+
+    &__button {
+        top: 50%;
+        right: 14px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s opacity;
+        background-size: 16px 16px;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("./assets/images/eye.svg");
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+}
