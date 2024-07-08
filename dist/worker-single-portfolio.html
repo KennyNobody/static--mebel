@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Портфолио - Мебельница</title>
-<link href="css/main.1fcd.css" rel="stylesheet"></head>
+<link href="css/main.4dcb.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
@@ -54,7 +54,7 @@
     <main class="main main--regular main--decor pb-160">
         <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
         <div class="main__section">
-            <section class="section mb-310">
+            <section class="section mb-205">
                 <div class="container">
                     <nav class="breadcrumbs">
                         <a href="./" class="breadcrumbs__item">
@@ -77,13 +77,34 @@
             </section>
             <section class="section">
                 <div class="container">
-                    <div class="grid">
+                    <div class="stack stack--60">
+                        <div class="flex-end">
+                            <button class="button-favorite active">
+                                <svg class="button-favorite__icon button-favorite__icon--disabled">
+                                    <use href="./assets/sprite/sprite.svg#icon-favorite-empty"></use>
+                                </svg>
+                                <svg class="button-favorite__icon button-favorite__icon--active">
+                                    <use href="./assets/sprite/sprite.svg#icon-favorite-fill"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="grid">
                         <div class="grid__col grid__col--2">
                             <aside class="aside-profile aside-profile--offset">
     <div class="aside-profile__header">
         <picture class="aside-profile__avatar">
             <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
         </picture>
+        <div class="aside-profile__status">
+            <div class="profile-status">
+                <button class="profile-status__button">
+
+                </button>
+                <div class="profile-status__content">
+                    Принимает заказы
+                </div>
+            </div>
+        </div>
     </div>
     <div class="aside-profile__main">
         <h1 class="aside-profile__name">
@@ -105,16 +126,16 @@
                     <use href="./assets/sprite/sprite.svg#icon-bag"></use>
                 </svg>
                 <span class="button__text">
-                                                Создать заказ
-                                            </span>
+                    Создать заказ
+                </span>
             </button>
             <button class="button button--grey button--middle full-width">
                 <svg class="button__icon">
                     <use href="./assets/sprite/sprite.svg#icon-mail"></use>
                 </svg>
                 <span class="button__text">
-                                                Сообщение
-                                            </span>
+                    Сообщение
+                </span>
             </button>
         </div>
         <div class="aside-profile__stat">
@@ -491,6 +512,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -577,5 +599,5 @@
 </footer>
 
 </div>
-<script defer src="bundle.cc11.js"></script></body>
+<script defer src="bundle.15fe.js"></script></body>
 </html>

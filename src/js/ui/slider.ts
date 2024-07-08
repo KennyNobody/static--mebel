@@ -7,7 +7,6 @@ import {Navigation, Pagination} from 'swiper/modules';
 
 class Slider {
     sliderInstance: Swiper | null = null;
-    sliderPagination: Swiper | null = null;
 
     constructor(el: Element) {
         this.initSlider(el);

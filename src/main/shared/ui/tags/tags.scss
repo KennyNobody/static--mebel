@@ -1,0 +1,17 @@
+.tags {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        color: #1C222E;
+        font-weight: 600;
+        min-height: 44px;
+        padding: 5px 22px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        background-color: #1C222E1A;
+    }
+}

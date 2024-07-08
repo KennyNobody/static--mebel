@@ -1,0 +1,15 @@
+.card {
+    gap: 18px;
+    display: flex;
+    color: #3B374E;
+    flex-direction: column;
+
+    &--profile-info {
+        padding: 20px 12px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

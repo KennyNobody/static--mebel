@@ -1,0 +1,19 @@
+.picture-slide {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+
+    &--main {
+        border-radius: 20px;
+    }
+
+    &--children {
+        border-radius: 8px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

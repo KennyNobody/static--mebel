@@ -1,0 +1,23 @@
+.profile-counter {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+
+    &__box {
+        gap: 14px;
+        width: 68px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__count {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+}

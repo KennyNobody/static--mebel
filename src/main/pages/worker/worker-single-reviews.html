@@ -10,7 +10,7 @@
     <main class="main main--regular main--decor pb-160">
         <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
         <div class="main__section">
-            <section class="section mb-310">
+            <section class="section mb-205">
                 <div class="container">
                     <nav class="breadcrumbs">
                         <a href="./" class="breadcrumbs__item">
@@ -33,7 +33,18 @@
             </section>
             <section class="section">
                 <div class="container">
-                    <div class="grid">
+                    <div class="stack stack--60">
+                        <div class="flex-end">
+                            <button class="button-favorite active">
+                                <svg class="button-favorite__icon button-favorite__icon--disabled">
+                                    <use href="./assets/sprite/sprite.svg#icon-favorite-empty"></use>
+                                </svg>
+                                <svg class="button-favorite__icon button-favorite__icon--active">
+                                    <use href="./assets/sprite/sprite.svg#icon-favorite-fill"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="grid">
                         <div class="grid__col grid__col--2">
                             <%= htmlWebpackPlugin.options.widgets.asideProfile %>
                         </div>
@@ -100,68 +111,8 @@
                                     <div class="articles__main">
                                         <div class="grid grid--6">
                                             <div class="grid__col grid__col--3">
-                                                <article class="article-review-catalog">
-                                                    <div class="head-person">
-                                                        <picture class="head-person__picture">
-                                                            <svg class="head-person__icon">
-                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
-                                                            </svg>
-                                                        </picture>
-                                                        <h3 class="head-person__name">
-                                                            Имя Фамилия
-                                                        </h3>
-                                                        <div class="rating rating--medium">
-                                                            <svg class="rating__icon active">
-                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                                            </svg>
-                                                            <svg class="rating__icon active">
-                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                                            </svg>
-                                                            <svg class="rating__icon active">
-                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                                            </svg>
-                                                            <svg class="rating__icon">
-                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                                            </svg>
-                                                            <svg class="rating__icon">
-                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="article-review-catalog__info">
-                                                        <span class="article-review-catalog__work">
-                                                            Шкаф
-                                                        </span>
-                                                        <span class="article-review-catalog__service">
-                                                            Весь комплекс услуг
-                                                        </span>
-                                                    </div>
-                                                    <div class="article-review-catalog__editor">
-                                                        <div class="editor">
-                                                            <p>
-                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="preview-gallery">
-                                                        <a href="" class="preview-gallery__item">
-                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
-                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
-                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                    </div>
-                                                    <time class="article-review-catalog__time">
-                                                        10.07.2023 14:46
-                                                    </time>
-                                                </article>
-                                            </div>
-                                            <div class="grid__col grid__col--3">
-                                                <article class="article-review-catalog">
-                                                    <div class="head-person">
+                                                <a class="article-review-catalog" href="#modal-1" data-fancybox="review-gallery">
+                                                    <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
                                                             <img src="https://placehold.co/1920x1080" alt="">
                                                         </picture>
@@ -202,24 +153,258 @@
                                                         </div>
                                                     </div>
                                                     <div class="preview-gallery">
-                                                        <a href="" class="preview-gallery__item">
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
+                                                        </div>
                                                     </div>
                                                     <time class="article-review-catalog__time">
                                                         10.07.2023 14:46
                                                     </time>
-                                                </article>
+                                                </a>
+                                                <div hidden="hidden">
+                                                    <div class="modal" id="modal-1">
+                                                        <div class="container">
+                                                            <div class="layout-modal">
+                                                                <div class="layout-modal__header">
+                                                                    <div class="head-person head-person--large">
+                                                                        <picture class="head-person__picture">
+                                                                            <svg class="head-person__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
+                                                                            </svg>
+                                                                        </picture>
+                                                                        <h3 class="head-person__name">
+                                                                            Имя Фамилия
+                                                                        </h3>
+                                                                        <div class="head-person__controls">
+                                                                            <a href="./" class="button button--green button--small">
+                                                                            <span class="button__text">
+                                                                                Заказать похожее
+                                                                            </span>
+                                                                            </a>
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    3569
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    245
+                                                                                </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="button-close" data-fancybox-close>
+                                                                    <span class="button-close__text">
+                                                                        Закрыть
+                                                                    </span>
+                                                                        <div class="button-close__circle">
+                                                                            <svg class="button-close__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="layout-modal__main">
+                                                                    <div class="grid">
+                                                                        <div class="grid__col grid__col--3">
+                                                                            <div class="stack stack--20">
+                                                                                <div class="editor">
+                                                                                    <h6>
+                                                                                        Гардеробная комната с подсветкой
+                                                                                    </h6>
+                                                                                    <p>
+                                                                                        Гардеробная комната – место, где встречаются комфорт и стиль. Она оборудована ящиками с доводчиками, обеспечивающими плавное открывание и закрывание. На полках размещены одежда и аксессуары, а отделения со штангой предназначены для хранения верхней одежды. Особенность помещения – сенсорная LED подсветка, которая активируется движением руки, придавая дополнительное удобство и создавая атмосферу уюта. Антресоли хранятся за фасадами, что придает организованности и элегантности интерьеру.
+                                                                                    </p>
+                                                                                    <h6>
+                                                                                        Материалы
+                                                                                    </h6>
+                                                                                    <ul>
+                                                                                        <li>Корпус: Kronospan</li>
+                                                                                        <li>Тип фасада: ДСП</li>
+                                                                                        <li>Ручки: Marella</li>
+                                                                                        <li>Выдвижные механизмы: Другое</li>
+                                                                                        <li>Петли: Italiana Ferramenta</li>
+                                                                                        <li>Ножки: Permo</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="tags">
+                                                                                <span class="tags__item">
+                                                                                    #Другое
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Дизайнерский
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Коричневый
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="toolbar-stack toolbar-stack--modal">
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--1"></div>
+                                                                        <div class="grid__col grid__col--4">
+                                                                            <div class="slider-modal-preview" data-sync-slider="modal-sync">
+                                                                                <div class="slider-modal-preview__main">
+                                                                                    <div class="swiper" data-sub-slider="main">
+                                                                                        <div class="swiper-wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="slider-modal-preview__child">
+                                                                                    <div class="swiper slider-pagination" data-sub-slider="pagination">
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--prev" data-button="prev">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--next" data-button="next">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <div class="swiper-wrapper slider-pagination__wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="layout-modal__footer">
+                                                                    <button class="button-nav" data-carousel-prev="true">
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <span class="button-nav__text">
+                                                                        Предыдущее
+                                                                    </span>
+                                                                    </button>
+                                                                    <button class="button-nav" data-carousel-next="true">
+                                                                    <span class="button-nav__text">
+                                                                        Следующее
+                                                                    </span>
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="grid__col grid__col--3">
-                                                <article class="article-review-catalog">
-                                                    <div class="head-person">
+                                                <a class="article-review-catalog" href="#modal-2" data-fancybox="review-gallery">
+                                                    <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
                                                             <img src="https://placehold.co/1920x1080" alt="">
                                                         </picture>
@@ -260,24 +445,258 @@
                                                         </div>
                                                     </div>
                                                     <div class="preview-gallery">
-                                                        <a href="" class="preview-gallery__item">
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
+                                                        </div>
                                                     </div>
                                                     <time class="article-review-catalog__time">
                                                         10.07.2023 14:46
                                                     </time>
-                                                </article>
+                                                </a>
+                                                <div hidden="hidden">
+                                                    <div class="modal" id="modal-2">
+                                                        <div class="container">
+                                                            <div class="layout-modal">
+                                                                <div class="layout-modal__header">
+                                                                    <div class="head-person head-person--large">
+                                                                        <picture class="head-person__picture">
+                                                                            <svg class="head-person__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
+                                                                            </svg>
+                                                                        </picture>
+                                                                        <h3 class="head-person__name">
+                                                                            Имя Фамилия
+                                                                        </h3>
+                                                                        <div class="head-person__controls">
+                                                                            <a href="./" class="button button--green button--small">
+                                                                            <span class="button__text">
+                                                                                Заказать похожее
+                                                                            </span>
+                                                                            </a>
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    3569
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    245
+                                                                                </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="button-close" data-fancybox-close>
+                                                                    <span class="button-close__text">
+                                                                        Закрыть
+                                                                    </span>
+                                                                        <div class="button-close__circle">
+                                                                            <svg class="button-close__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="layout-modal__main">
+                                                                    <div class="grid">
+                                                                        <div class="grid__col grid__col--3">
+                                                                            <div class="stack stack--20">
+                                                                                <div class="editor">
+                                                                                    <h6>
+                                                                                        Гардеробная комната с подсветкой
+                                                                                    </h6>
+                                                                                    <p>
+                                                                                        Гардеробная комната – место, где встречаются комфорт и стиль. Она оборудована ящиками с доводчиками, обеспечивающими плавное открывание и закрывание. На полках размещены одежда и аксессуары, а отделения со штангой предназначены для хранения верхней одежды. Особенность помещения – сенсорная LED подсветка, которая активируется движением руки, придавая дополнительное удобство и создавая атмосферу уюта. Антресоли хранятся за фасадами, что придает организованности и элегантности интерьеру.
+                                                                                    </p>
+                                                                                    <h6>
+                                                                                        Материалы
+                                                                                    </h6>
+                                                                                    <ul>
+                                                                                        <li>Корпус: Kronospan</li>
+                                                                                        <li>Тип фасада: ДСП</li>
+                                                                                        <li>Ручки: Marella</li>
+                                                                                        <li>Выдвижные механизмы: Другое</li>
+                                                                                        <li>Петли: Italiana Ferramenta</li>
+                                                                                        <li>Ножки: Permo</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="tags">
+                                                                                <span class="tags__item">
+                                                                                    #Другое
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Дизайнерский
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Коричневый
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="toolbar-stack toolbar-stack--modal">
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--1"></div>
+                                                                        <div class="grid__col grid__col--4">
+                                                                            <div class="slider-modal-preview" data-sync-slider="modal-sync">
+                                                                                <div class="slider-modal-preview__main">
+                                                                                    <div class="swiper" data-sub-slider="main">
+                                                                                        <div class="swiper-wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="slider-modal-preview__child">
+                                                                                    <div class="swiper slider-pagination" data-sub-slider="pagination">
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--prev" data-button="prev">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--next" data-button="next">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <div class="swiper-wrapper slider-pagination__wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="layout-modal__footer">
+                                                                    <button class="button-nav" data-carousel-prev="true">
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <span class="button-nav__text">
+                                                                        Предыдущее
+                                                                    </span>
+                                                                    </button>
+                                                                    <button class="button-nav" data-carousel-next="true">
+                                                                    <span class="button-nav__text">
+                                                                        Следующее
+                                                                    </span>
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="grid__col grid__col--3">
-                                                <article class="article-review-catalog">
-                                                    <div class="head-person">
+                                                <a class="article-review-catalog" href="#modal-3" data-fancybox="review-gallery">
+                                                    <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
                                                             <img src="https://placehold.co/1920x1080" alt="">
                                                         </picture>
@@ -318,20 +737,546 @@
                                                         </div>
                                                     </div>
                                                     <div class="preview-gallery">
-                                                        <a href="" class="preview-gallery__item">
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
-                                                        <a href="" class="preview-gallery__item">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
                                                             <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
-                                                        </a>
+                                                        </div>
                                                     </div>
                                                     <time class="article-review-catalog__time">
                                                         10.07.2023 14:46
                                                     </time>
-                                                </article>
+                                                </a>
+                                                <div hidden="hidden">
+                                                    <div class="modal" id="modal-3">
+                                                        <div class="container">
+                                                            <div class="layout-modal">
+                                                                <div class="layout-modal__header">
+                                                                    <div class="head-person head-person--large">
+                                                                        <picture class="head-person__picture">
+                                                                            <svg class="head-person__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
+                                                                            </svg>
+                                                                        </picture>
+                                                                        <h3 class="head-person__name">
+                                                                            Имя Фамилия
+                                                                        </h3>
+                                                                        <div class="head-person__controls">
+                                                                            <a href="./" class="button button--green button--small">
+                                                                            <span class="button__text">
+                                                                                Заказать похожее
+                                                                            </span>
+                                                                            </a>
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    3569
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    245
+                                                                                </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="button-close" data-fancybox-close>
+                                                                    <span class="button-close__text">
+                                                                        Закрыть
+                                                                    </span>
+                                                                        <div class="button-close__circle">
+                                                                            <svg class="button-close__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="layout-modal__main">
+                                                                    <div class="grid">
+                                                                        <div class="grid__col grid__col--3">
+                                                                            <div class="stack stack--20">
+                                                                                <div class="editor">
+                                                                                    <h6>
+                                                                                        Гардеробная комната с подсветкой
+                                                                                    </h6>
+                                                                                    <p>
+                                                                                        Гардеробная комната – место, где встречаются комфорт и стиль. Она оборудована ящиками с доводчиками, обеспечивающими плавное открывание и закрывание. На полках размещены одежда и аксессуары, а отделения со штангой предназначены для хранения верхней одежды. Особенность помещения – сенсорная LED подсветка, которая активируется движением руки, придавая дополнительное удобство и создавая атмосферу уюта. Антресоли хранятся за фасадами, что придает организованности и элегантности интерьеру.
+                                                                                    </p>
+                                                                                    <h6>
+                                                                                        Материалы
+                                                                                    </h6>
+                                                                                    <ul>
+                                                                                        <li>Корпус: Kronospan</li>
+                                                                                        <li>Тип фасада: ДСП</li>
+                                                                                        <li>Ручки: Marella</li>
+                                                                                        <li>Выдвижные механизмы: Другое</li>
+                                                                                        <li>Петли: Italiana Ferramenta</li>
+                                                                                        <li>Ножки: Permo</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="tags">
+                                                                                <span class="tags__item">
+                                                                                    #Другое
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Дизайнерский
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Коричневый
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="toolbar-stack toolbar-stack--modal">
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--1"></div>
+                                                                        <div class="grid__col grid__col--4">
+                                                                            <div class="slider-modal-preview" data-sync-slider="modal-sync">
+                                                                                <div class="slider-modal-preview__main">
+                                                                                    <div class="swiper" data-sub-slider="main">
+                                                                                        <div class="swiper-wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="slider-modal-preview__child">
+                                                                                    <div class="swiper slider-pagination" data-sub-slider="pagination">
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--prev" data-button="prev">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--next" data-button="next">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <div class="swiper-wrapper slider-pagination__wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="layout-modal__footer">
+                                                                    <button class="button-nav" data-carousel-prev="true">
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <span class="button-nav__text">
+                                                                        Предыдущее
+                                                                    </span>
+                                                                    </button>
+                                                                    <button class="button-nav" data-carousel-next="true">
+                                                                    <span class="button-nav__text">
+                                                                        Следующее
+                                                                    </span>
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid__col grid__col--3">
+                                                <a class="article-review-catalog" href="#modal-4" data-fancybox="review-gallery">
+                                                    <div class="head-person head-person--medium">
+                                                        <picture class="head-person__picture">
+                                                            <img src="https://placehold.co/1920x1080" alt="">
+                                                        </picture>
+                                                        <h3 class="head-person__name">
+                                                            Имя Фамилия
+                                                        </h3>
+                                                        <div class="rating rating--medium">
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon active">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                            <svg class="rating__icon">
+                                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article-review-catalog__info">
+                                                        <span class="article-review-catalog__work">
+                                                            Шкаф
+                                                        </span>
+                                                        <span class="article-review-catalog__service">
+                                                            Весь комплекс услуг
+                                                        </span>
+                                                    </div>
+                                                    <div class="article-review-catalog__editor">
+                                                        <div class="editor">
+                                                            <p>
+                                                                С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, С самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений, а самого начала общения я была приятно удивлена его профессионализмом и вниманием к моим потребностям. Он внимательно выслушал мои пожелания по дизайну и предложил несколько вариантов решений.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="preview-gallery">
+                                                        <div class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </div>
+                                                        <div class="preview-gallery__item">
+                                                            <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
+                                                        </div>
+                                                    </div>
+                                                    <time class="article-review-catalog__time">
+                                                        10.07.2023 14:46
+                                                    </time>
+                                                </a>
+                                                <div hidden="hidden">
+                                                    <div class="modal" id="modal-4">
+                                                        <div class="container">
+                                                            <div class="layout-modal">
+                                                                <div class="layout-modal__header">
+                                                                    <div class="head-person head-person--large">
+                                                                        <picture class="head-person__picture">
+                                                                            <svg class="head-person__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-profile"></use>
+                                                                            </svg>
+                                                                        </picture>
+                                                                        <h3 class="head-person__name">
+                                                                            Имя Фамилия
+                                                                        </h3>
+                                                                        <div class="head-person__controls">
+                                                                            <a href="./" class="button button--green button--small">
+                                                                            <span class="button__text">
+                                                                                Заказать похожее
+                                                                            </span>
+                                                                            </a>
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    3569
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                    245
+                                                                                </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="button-close" data-fancybox-close>
+                                                                    <span class="button-close__text">
+                                                                        Закрыть
+                                                                    </span>
+                                                                        <div class="button-close__circle">
+                                                                            <svg class="button-close__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="layout-modal__main">
+                                                                    <div class="grid">
+                                                                        <div class="grid__col grid__col--3">
+                                                                            <div class="stack stack--20">
+                                                                                <div class="editor">
+                                                                                    <h6>
+                                                                                        Гардеробная комната с подсветкой
+                                                                                    </h6>
+                                                                                    <p>
+                                                                                        Гардеробная комната – место, где встречаются комфорт и стиль. Она оборудована ящиками с доводчиками, обеспечивающими плавное открывание и закрывание. На полках размещены одежда и аксессуары, а отделения со штангой предназначены для хранения верхней одежды. Особенность помещения – сенсорная LED подсветка, которая активируется движением руки, придавая дополнительное удобство и создавая атмосферу уюта. Антресоли хранятся за фасадами, что придает организованности и элегантности интерьеру.
+                                                                                    </p>
+                                                                                    <h6>
+                                                                                        Материалы
+                                                                                    </h6>
+                                                                                    <ul>
+                                                                                        <li>Корпус: Kronospan</li>
+                                                                                        <li>Тип фасада: ДСП</li>
+                                                                                        <li>Ручки: Marella</li>
+                                                                                        <li>Выдвижные механизмы: Другое</li>
+                                                                                        <li>Петли: Italiana Ferramenta</li>
+                                                                                        <li>Ножки: Permo</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="tags">
+                                                                                <span class="tags__item">
+                                                                                    #Другое
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Дизайнерский
+                                                                                </span>
+                                                                                    <span class="tags__item">
+                                                                                    #Коричневый
+                                                                                </span>
+                                                                                </div>
+                                                                                <div class="toolbar-stack toolbar-stack--modal">
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                    <button class="button-action">
+                                                                                        <svg class="button-action__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--1"></div>
+                                                                        <div class="grid__col grid__col--4">
+                                                                            <div class="slider-modal-preview" data-sync-slider="modal-sync">
+                                                                                <div class="slider-modal-preview__main">
+                                                                                    <div class="swiper" data-sub-slider="main">
+                                                                                        <div class="swiper-wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--main">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="slider-modal-preview__child">
+                                                                                    <div class="swiper slider-pagination" data-sub-slider="pagination">
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--prev" data-button="prev">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <button class="button-slider-pagination slider-pagination__button slider-pagination__button--next" data-button="next">
+                                                                                            <svg class="button-slider-pagination__icon">
+                                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                        <div class="swiper-wrapper slider-pagination__wrapper">
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                            <div class="swiper-slide">
+                                                                                                <picture class="picture-slide picture-slide--children">
+                                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                                </picture>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="layout-modal__footer">
+                                                                    <button class="button-nav" data-carousel-prev="true">
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <span class="button-nav__text">
+                                                                        Предыдущее
+                                                                    </span>
+                                                                    </button>
+                                                                    <button class="button-nav" data-carousel-next="true">
+                                                                    <span class="button-nav__text">
+                                                                        Следующее
+                                                                    </span>
+                                                                        <div class="button-nav__circle">
+                                                                            <svg class="button-nav__icon">
+                                                                                <use href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -378,6 +1323,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>

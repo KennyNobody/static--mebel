@@ -10,7 +10,7 @@
         <main class="main main--regular main--decor pb-160">
             <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
             <div class="main__section">
-                <section class="section mb-310">
+                <section class="section mb-205">
                     <div class="container">
                         <nav class="breadcrumbs">
                             <a href="./" class="breadcrumbs__item">
@@ -33,26 +33,313 @@
                 </section>
                 <section class="section">
                     <div class="container">
-                        <div class="grid">
-                            <div class="grid__col grid__col--2">
-                                <%= htmlWebpackPlugin.options.widgets.asideProfile %>
+                        <div class="stack stack--60">
+                            <div class="flex-end">
+                                <button class="button-favorite active">
+                                    <svg class="button-favorite__icon button-favorite__icon--disabled">
+                                        <use href="./assets/sprite/sprite.svg#icon-favorite-empty"></use>
+                                    </svg>
+                                    <svg class="button-favorite__icon button-favorite__icon--active">
+                                        <use href="./assets/sprite/sprite.svg#icon-favorite-fill"></use>
+                                    </svg>
+                                </button>
                             </div>
-                            <div class="grid__col grid__col--6">
-                                <div class="stack stack--30">
-                                    <nav class="nav-tab">
-                                        <a href="./worker-single-info.html" class="nav-tab__link active">
-                                            Данные
-                                        </a>
-                                        <a href="./worker-single-portfolio.html" class="nav-tab__link">
-                                            Портфолио
-                                        </a>
-                                        <a href="./worker-single-reviews.html" class="nav-tab__link">
-                                            Отзывы
-                                        </a>
-                                    </nav>
-                                    <span>
-                                        Описание
-                                    </span>
+                            <div class="grid">
+                                <div class="grid__col grid__col--2">
+                                    <%= htmlWebpackPlugin.options.widgets.asideProfile %>
+                                </div>
+                                <div class="grid__col grid__col--6">
+                                    <div class="stack stack--30">
+                                        <nav class="nav-tab">
+                                            <a href="./worker-single-info.html" class="nav-tab__link active">
+                                                Данные
+                                            </a>
+                                            <a href="./worker-single-portfolio.html" class="nav-tab__link">
+                                                Портфолио
+                                            </a>
+                                            <a href="./worker-single-reviews.html" class="nav-tab__link">
+                                                Отзывы
+                                            </a>
+                                        </nav>
+                                        <div class="card card--profile-info">
+                                            <h2 class="card__title">
+                                                Информация
+                                            </h2>
+                                            <div class="card__content">
+                                                <div class="editor">
+                                                    <p>
+                                                        Здравствуйте! Меня зовут Лина и со мной более 15 лет опыта. Я предлагаю вам комплекс услуг: это бесплатный 3D дизайн-проект, лазерные измерения и сопровождение проекта на каждом этапе, включая сотрудничество с дизайнерами-архитекторами, строителями и премиальное качество работ на всех этапах. Обращайтесь, и мы воплотим ваши идеи в реальность. С уважением. Лина.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-columns">
+                                            <article class="block-fact">
+                                                <div class="profile-counter">
+                                                    <div class="profile-counter__box" style="background-image: url('./assets/images/bg-factoid-yellow.svg')">
+                                                        <span class="profile-counter__count">
+                                                            20
+                                                        </span>
+                                                    </div>
+                                                    <div class="profile-counter__content">
+                                                        <div class="editor">
+                                                            <p>
+                                                                20 выполненных заказов
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="stack stack--18">
+                                                    <div class="profile-counter">
+                                                        <div class="profile-counter__box" style="background-image: url('./assets/images/bg-factoid-green.svg')">
+                                                        <span class="profile-counter__count">
+                                                            5
+                                                        </span>
+                                                        </div>
+                                                        <div class="profile-counter__content">
+                                                            <div class="editor">
+                                                                <p>
+                                                                    Гарантия
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-counter">
+                                                        <div class="profile-counter__box" style="background-image: url('./assets/images/bg-factoid-green.svg')">
+                                                        <span class="profile-counter__count">
+                                                            132
+                                                        </span>
+                                                        </div>
+                                                        <div class="profile-counter__content">
+                                                            <div class="editor">
+                                                                <p>
+                                                                    Онлайн-консультации
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-counter">
+                                                        <div class="profile-counter__box" style="background-image: url('./assets/images/bg-factoid-green.svg')">
+                                                        <span class="profile-counter__count">
+                                                            2
+                                                        </span>
+                                                        </div>
+                                                        <div class="profile-counter__content">
+                                                            <div class="editor">
+                                                                <p>
+                                                                    Премиум-сегмент
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-counter">
+                                                        <div class="profile-counter__box" style="background-image: url('./assets/images/bg-factoid-green.svg')">
+                                                        <span class="profile-counter__count">
+                                                            18
+                                                        </span>
+                                                        </div>
+                                                        <div class="profile-counter__content">
+                                                            <div class="editor">
+                                                                <p>
+                                                                    Варианты оплаты
+                                                                </p>
+                                                            </div>
+                                                            <div class="editor">
+                                                                <ul>
+                                                                    <li>
+                                                                        наличный расчет
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="editor">
+                                                    <h5>
+                                                        Ценовой сегмент
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Средний
+                                                        </li>
+                                                        <li>
+                                                            Средний плюс
+                                                        </li>
+                                                        <li>
+                                                            Премиум
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="editor">
+                                                    <h5>
+                                                        Контакты
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Контактные данные специалиста отображаются после того, как он откликнулся на вашу заявку.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="editor">
+                                                    <h5>
+                                                        Виды работ
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Весь комплекс услуг
+                                                        </li>
+                                                        <li>
+                                                            Замер
+                                                        </li>
+                                                        <li>
+                                                            Дизайн мебели
+                                                        </li>
+                                                        <li>
+                                                            Сборка и установка
+                                                        </li>
+                                                        <li>
+                                                            Ремонт мебели
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="editor">
+                                                    <h5>
+                                                        Стиль мебели
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Классический
+                                                        </li>
+                                                        <li>
+                                                            Кантри
+                                                        </li>
+                                                        <li>
+                                                            Современный
+                                                        </li>
+                                                        <li>
+                                                            Дизайнерский
+                                                        </li>
+                                                        <li>
+                                                            Лофт
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="stack stack--16">
+                                                    <div class="editor">
+                                                        <h5>
+                                                            График работы
+                                                        </h5>
+                                                    </div>
+                                                    <div class="stack stack--8">
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                ПН
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                ВТ
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                СР
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                ЧТ
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                ПТ
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                СБ
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                        <div class="line-time">
+                                                            <span class="line-time__time">
+                                                                ВС
+                                                            </span>
+                                                            <span class="line-time__text">
+                                                                08:00 - 20:00
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="block-fact">
+                                                <div class="editor">
+                                                    <h5>
+                                                        Виды мебели
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            Кухня
+                                                        </li>
+                                                        <li>
+                                                            Шкаф
+                                                        </li>
+                                                        <li>
+                                                            Компьютерный стол
+                                                        </li>
+                                                        <li>
+                                                            Прихожая
+                                                        </li>
+                                                        <li>
+                                                            Полка
+                                                        </li>
+                                                        <li>
+                                                            Комод / Тумба
+                                                        </li>
+                                                        <li>
+                                                            Стенка
+                                                        </li>
+                                                        <li>
+                                                            Стеллаж
+                                                        </li>
+                                                        <li>
+                                                            Другое
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

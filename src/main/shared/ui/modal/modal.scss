@@ -1,0 +1,11 @@
+.modal {
+    display: block;
+    background: none;
+    visibility: visible;
+    color: var(--color-white);
+
+    &[hidden] {
+        display: none;
+        visibility: hidden;
+    }
+}

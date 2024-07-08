@@ -1,19 +1,49 @@
 .head-person {
-    gap: 8px 15px;
     display: grid;
     align-items: center;
     grid-template-rows: auto auto;
-    grid-template-columns: 50px 1fr;
+
+    &--medium {
+        gap: 8px 15px;
+        grid-template-columns: 50px 1fr;
+
+        .head-person {
+            &__picture {
+                width: 50px;
+                height: 50px;
+            }
+
+            &__icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &--large {
+        gap: 0 22px;
+        grid-template-columns: 90px 1fr;
+
+        .head-person {
+            &__picture {
+                width: 90px;
+                height: 90px;
+            }
+
+            &__icon {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
 
     &__picture {
-        width: 50px;
-        height: 50px;
-        flex-shrink: 0;
         display: flex;
+        flex-shrink: 0;
         overflow: hidden;
         grid-row: span 2;
-        border-radius: 50px;
         align-items: center;
+        border-radius: 100px;
         justify-content: center;
         border: 1px solid #F3F3F4;
         background-color: #FFFFFF;
@@ -28,8 +58,6 @@
     }
 
     &__icon {
-        width: 18px;
-        height: 18px;
         fill: #292D32;
         display: block;
     }
@@ -50,5 +78,11 @@
 
     &__toolbar {
 
+    }
+
+    &__controls {
+        gap: 30px;
+        display: flex;
+        align-items: center;
     }
 }

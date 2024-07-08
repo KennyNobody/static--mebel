@@ -1,0 +1,48 @@
+.button-nav {
+    gap: 8px;
+    display: flex;
+    color: #A9ABB0;
+    cursor: pointer;
+    padding: 6px 10px;
+    align-items: center;
+    transition: 0.3s all;
+
+    &:hover,
+    &:focus {
+        color: var(--color-green);
+
+        .button-nav {
+            &__circle {
+                background-color: #34B16666;
+            }
+
+            &__icon {
+                fill: var(--color-green);
+            }
+        }
+    }
+
+    &__circle {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-shrink: 0;
+        border-radius: 20px;
+        align-items: center;
+        transition: 0.3s all;
+        justify-content: center;
+        background-color: #A9ABB066;
+    }
+
+    &__span {
+        font-size: 14px;
+    }
+
+    &__icon {
+        width: 5px;
+        height: 9px;
+        fill: #A9ABB0;
+        display: block;
+        transition: 0.3s all;
+    }
+}

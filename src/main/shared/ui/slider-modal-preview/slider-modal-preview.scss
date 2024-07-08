@@ -1,0 +1,14 @@
+.slider-modal-preview {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+
+    }
+
+    &__child {
+        overflow: hidden;
+        padding: 0 16px;
+    }
+}

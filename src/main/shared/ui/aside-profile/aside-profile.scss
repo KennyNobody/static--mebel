@@ -4,12 +4,14 @@
     padding: 0 20px 40px;
     flex-direction: column;
     background-color: var(--color-white);
+    box-shadow: 0 0 20px 0 rgba(80, 80, 80, 0.1);
 
     &--offset {
         transform: translateY(-195px);
     }
 
     &__header {
+        position: relative;
         width: fit-content;
         margin: -60px auto 20px;
     }
@@ -29,6 +31,13 @@
             object-fit: cover;
             object-position: center;
         }
+    }
+
+    &__status {
+        z-index: 1;
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
     }
 
     &__name {

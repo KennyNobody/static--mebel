@@ -1,0 +1,23 @@
+.button-action {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s opacity;
+    background-color: #34B1661A;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        display: block;
+        fill: var(--color-green);
+    }
+}

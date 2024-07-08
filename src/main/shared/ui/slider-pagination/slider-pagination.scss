@@ -1,0 +1,18 @@
+.slider-pagination {
+    overflow: visible;
+
+    &__button {
+        top: 50%;
+        z-index: 2;
+        position: absolute;
+        transform: translateY(-50%);
+
+        &--prev {
+            left: -16px;
+        }
+
+        &--next {
+            right: -16px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.line-time {
+    gap: 16px;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.6;
+
+    &__time {
+        width: 42px;
+        flex-shrink: 0;
+        font-weight: 300;
+        color: var(--color-green);
+    }
+
+    &__text {
+        flex-grow: 1;
+        color: #3B374E;
+        font-weight: 700;
+    }
+}
