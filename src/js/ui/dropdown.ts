@@ -26,8 +26,10 @@ class Dropdown {
 
     private toggleItem(): void {
         if (this.isActive) {
+            this.el.classList.add('active');
             this.content.removeAttribute('hidden');
         } else {
+            this.el.classList.remove('active');
             this.content.setAttribute('hidden', 'hidden');
         }
     }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О сервисе - Мебельница</title>
+</head>
+<body class="body">
+    <div class="page">
+        <%= htmlWebpackPlugin.options.widgets.header %>
+        <main class="main main--regular pb-160">
+            <div class="main__section mb-90">
+                <section class="section">
+                    <div class="container">
+                        <nav class="breadcrumbs">
+                            <a href="./" class="breadcrumbs__item">
+                                Главная
+                            </a>
+                            <span class="breadcrumbs__item">
+                                /
+                            </span>
+                            <span class="breadcrumbs__item">
+                                О сервисе
+                            </span>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+            <div class="main__section mb-180">
+                <%= htmlWebpackPlugin.options.widgets.about %>
+            </div>
+            <div class="main__section">
+                <%= htmlWebpackPlugin.options.widgets.introProcess %>
+            </div>
+        </main>
+        <%= htmlWebpackPlugin.options.widgets.footer %>
+        <%= htmlWebpackPlugin.options.widgets.tempLinks %>
+    </div>
+</body>
+</html>

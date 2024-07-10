@@ -1,0 +1,17 @@
+.list-cards {
+    gap: 20px;
+    display: flex;
+    padding: 25px;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #F6F6F7;
+
+    &__item {
+        max-height: 1000px;
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

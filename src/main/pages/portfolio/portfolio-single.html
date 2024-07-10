@@ -29,7 +29,16 @@
                                     Название проекта
                                 </span>
                             </nav>
-                            Назад
+                            <a href="portfolio.html" class="button-nav">
+                                <div class="button-nav__circle">
+                                    <svg class="button-nav__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-arrow-prev"></use>
+                                    </svg>
+                                </div>
+                                <span class="button-nav__text">
+                                    Вернуться назад
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -37,6 +46,7 @@
             </div>
         </main>
         <%= htmlWebpackPlugin.options.widgets.footer %>
+        <%= htmlWebpackPlugin.options.widgets.tempLinks %>
     </div>
 </body>
 </html>

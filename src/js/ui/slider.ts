@@ -21,6 +21,10 @@ class Slider {
 
         if (mode === 'preview') this.initPreviewSlider(el);
 
+        if (mode === 'section-list') this.initSectionListSlider(el);
+
+        if (mode === 'promo') this.initPromoSlider(el);
+
         if (this.sliderInstance) {
             this.initControls(el);
         }
@@ -57,6 +61,17 @@ class Slider {
         });
     }
 
+    private initSectionListSlider(el: Element): void {
+        this.sliderInstance = new Swiper(el, {
+            loop: false,
+            enabled: true,
+            slidesPerView: 4,
+            slideActiveClass: 'active',
+            spaceBetween: 20,
+            allowTouchMove: false,
+        });
+    }
+
     private initReviewsSlider(el: Element): void {
         this.sliderInstance = new Swiper(el, {
             loop: false,
@@ -85,6 +100,21 @@ class Slider {
                 renderBullet: (index: number, className: string) => {
                     return `<button class="${className}"><span class="bullets__item-content"></span></button>`;
                 },
+            },
+        })
+    }
+
+    private initPromoSlider(el: Element): void {
+        this.sliderInstance = new Swiper(el, {
+            loop: true,
+            slidesPerView: 1,
+            slideActiveClass: 'active',
+            modules: [Pagination],
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'active',
+                el: '[data-slider="pagination"]',
+                bulletClass: 'bullets-flex__item',
             },
         })
     }

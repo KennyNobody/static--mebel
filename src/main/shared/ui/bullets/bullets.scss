@@ -45,6 +45,7 @@
         display: block;
         padding: 0 2px;
         cursor: pointer;
+        max-width: 42px;
 
         &.active {
             .bullets {

@@ -1,0 +1,39 @@
+.factoid-info {
+    gap: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__circle {
+        width: 86px;
+        height: 86px;
+        display: flex;
+        flex-shrink: 0;
+        border-radius: 90px;
+        align-items: center;
+        justify-content: center;
+        background-color: #F6F6F7;
+
+        img {
+            width: auto;
+            height: 34px;
+            display: block;
+        }
+    }
+
+    &__content {
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--color-green);
+    }
+
+    &__text {
+        line-height: 1.4;
+    }
+}

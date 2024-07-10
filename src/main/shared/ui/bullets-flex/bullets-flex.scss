@@ -1,0 +1,19 @@
+.bullets-flex {
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        width: 14px;
+        height: 4px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s all;
+        background-color: #1C222E;
+
+        &.active {
+            width: 24px;
+            background-color: var(--color-green);
+        }
+    }
+}

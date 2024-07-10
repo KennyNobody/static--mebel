@@ -24,4 +24,11 @@
             color: var(--color-green);
         }
     }
+
+    &__text {
+        color: var(--color-green);
+        line-height: 1.6;
+        font-weight: 300;
+        transition: 0.3s all;
+    }
 }

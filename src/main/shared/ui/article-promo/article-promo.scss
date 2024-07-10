@@ -10,20 +10,14 @@
     transition: 0.3s all;
     flex-direction: column;
     background-color: #F6F6F7;
+    background-size: auto 350px ;
+    background-repeat: no-repeat;
+    background-position: right -20px bottom;
+
 
     @at-root a#{&} {
         &:hover {
             opacity: 0.7;
-        }
-    }
-
-    &--right {
-        text-align: right;
-
-        .article-promo {
-            &__toolbar {
-                justify-content: flex-end;
-            }
         }
     }
 

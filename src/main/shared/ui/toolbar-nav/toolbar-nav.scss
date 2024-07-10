@@ -4,6 +4,15 @@
     align-items: center;
     justify-content: center;
 
+    &__label {
+        cursor: pointer;
+    }
+
+    &__input {
+        display: none;
+        visibility: hidden;
+    }
+
     &__link {
         color: #A9ABB0;
         font-size: 16px;
@@ -11,6 +20,12 @@
         text-transform: uppercase;
 
         &.active {
+            color: var(--color-green);
+        }
+    }
+
+    &__input:checked {
+        & + .toolbar-nav__link {
             color: var(--color-green);
         }
     }

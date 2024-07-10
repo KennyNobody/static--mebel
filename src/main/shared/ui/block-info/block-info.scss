@@ -1,0 +1,20 @@
+.block-info {
+    padding: 0 0 0 90px;
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__editor {
+        color: #8C8C8C;
+        line-height: 1.8;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

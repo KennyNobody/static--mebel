@@ -6,6 +6,7 @@ import {Tooltip} from "../ui/tooltip";
 import {SyncSlider} from "../ui/syncSlider";
 import { Fancybox } from "@fancyapps/ui";
 import {Input} from "../ui/input";
+import {SortList} from "../ui/sortList";
 
 class App {
     constructor() {
@@ -21,6 +22,7 @@ class App {
         this.initTooltip();
         this.initFancybox();
         this.initForms();
+        this.initSortList();
     }
 
     private initSliders = (el?: Element) => {
@@ -92,6 +94,12 @@ class App {
         const elements: NodeListOf<Element> = document.querySelectorAll('[data-input="block"]');
 
         elements.forEach((item) => new Input(item));
+    }
+
+    private initSortList = () => {
+        const elements: NodeListOf<Element> = document.querySelectorAll('[data-sort-list="block"]');
+
+        elements.forEach((item) => new SortList(item));
     }
 }
 
