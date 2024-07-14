@@ -50,8 +50,19 @@ class SyncSlider {
         if (mainSlider) {
             this.sliderInstance = new Swiper(mainSlider, {
                 slidesPerView: 1,
+                modules: [Pagination],
                 slideActiveClass: 'active',
                 thumbs: this.sliderPagination,
+                pagination: {
+                    clickable: true,
+                    bulletActiveClass: 'active',
+                    el: '[data-slider="pagination"]',
+                    bulletClass: 'bullets__item',
+                    simulateTouch: false,
+                    renderBullet: (index: number, className: string) => {
+                        return `<button class="${className}"><span class="bullets__item-content"></span></button>`;
+                    },
+                },
             });
         }
 

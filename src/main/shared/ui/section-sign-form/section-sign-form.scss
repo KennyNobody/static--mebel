@@ -96,6 +96,11 @@
         }
     }
 
+    &__layer-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
     &__container {
         display: flex;
         height: 100vh;
@@ -121,6 +126,115 @@
             height: 100%;
             display: block;
             object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 1299px) {
+    .section-sign-form {
+        &--style-1 {
+            .section-sign-form {
+                &__layer {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                &__layer-mobile {
+                    left: 0;
+                    bottom: 0;
+                    top: auto;
+                    height: 25%;
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    visibility: visible;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+
+                &__picture {
+                    right: 0;
+                    width: auto;
+                    height: 340px;
+                    transform: none;
+
+                    img {
+                        object-position: center;
+                    }
+                }
+            }
+        }
+
+        &--style-2,
+        &--style-3 {
+            background-color: #130F26;
+
+            .section-sign-form {
+
+                &__container {
+                    padding-top: 100px;
+                    padding-bottom: 500px;
+                }
+
+                &__picture {
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: auto;
+                    width: auto;
+                    height: 500px;
+                    transform: none;
+                    position: absolute;
+
+                    img {
+                        object-position: bottom center;
+                    }
+                }
+            }
+        }
+
+        &__bg {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__layer {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__container {
+            height: auto;
+            min-height: 100vh;
+            padding-top: 100px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__content {
+            order: 1;
+            z-index: 2;
+            width: 100%;
+        }
+
+        &__picture {
+            order: 2;
+        //    top: 50%;
+        //    display: block;
+            position: static;
+        //    pointer-events: none;
+        //    transform: translateY(-50%);
+        //
+        //    img {
+        //        width: 100%;
+        //        height: 100%;
+        //        display: block;
+        //        object-fit: contain;
+        //    }
         }
     }
 }

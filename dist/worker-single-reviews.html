@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Отзывы - Мебельщики</title>
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -51,10 +60,10 @@
     </div>
 </header>
 
-    <main class="main main--regular main--decor pb-160">
+    <main class="main main--regular main--decor pb-160 pb-m-90">
         <div class="main__decor" style="background-image: url('./assets/images/bg-top-profile.jpg')"></div>
         <div class="main__section">
-            <section class="section mb-205">
+            <section class="section mb-205 mbm-90">
                 <div class="container">
                     <nav class="breadcrumbs">
                         <a href="./" class="breadcrumbs__item">
@@ -78,7 +87,7 @@
             <section class="section">
                 <div class="container">
                     <div class="stack stack--60">
-                        <div class="flex-end">
+                        <div class="flex-end mob-hidden">
                             <button class="button-favorite active">
                                 <svg class="button-favorite__icon button-favorite__icon--disabled">
                                     <use href="./assets/sprite/sprite.svg#icon-favorite-empty"></use>
@@ -89,7 +98,7 @@
                             </button>
                         </div>
                         <div class="grid">
-                        <div class="grid__col grid__col--2">
+                        <div class="grid__col grid__col--2 grid__col-mob--4">
                             <aside class="aside-profile aside-profile--offset">
     <div class="aside-profile__header">
         <picture class="aside-profile__avatar">
@@ -135,6 +144,14 @@
                 </svg>
                 <span class="button__text">
                     Сообщение
+                </span>
+            </button>
+            <button class="button button--grey-light button--middle full-width active">
+                <svg class="button__icon">
+                    <use href="./assets/sprite/sprite.svg#icon-favorite-fill"></use>
+                </svg>
+                <span class="button__text">
+                    В избранное
                 </span>
             </button>
         </div>
@@ -195,7 +212,7 @@
 </aside>
 
                         </div>
-                        <div class="grid__col grid__col--6">
+                        <div class="grid__col grid__col--6 grid__col-mob--4">
                             <div class="stack stack--20">
                                 <nav class="nav-tab">
                                     <a href="./worker-single-info.html" class="nav-tab__link">
@@ -209,7 +226,7 @@
                                     </a>
                                 </nav>
                                 <div class="grid">
-                                    <div class="grid__col grid__col--3">
+                                    <div class="grid__col grid__col--3 grid__col-mob--4">
                                         <div class="select select--icon" data-select="block">
                                             <button class="select__button" data-select="button" type="button">
                                                 <span class="select__message" data-select="message" data-select-placeholder="Сортировать">Сортировать</span>
@@ -256,8 +273,8 @@
                                 </div>
                                 <div class="articles">
                                     <div class="articles__main">
-                                        <div class="grid grid--6">
-                                            <div class="grid__col grid__col--3">
+                                        <div class="grid grid--6 grid__col-mob--4">
+                                            <div class="grid__col grid__col--3 grid__col-mob--4">
                                                 <a class="article-review-catalog" href="#modal-1" data-fancybox="review-gallery">
                                                     <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
@@ -333,9 +350,36 @@
                                                                 </div>
                                                                 <div class="layout-modal__main">
                                                                     <div class="grid">
-                                                                        <div class="grid__col grid__col--3">
+                                                                        <div class="grid__col grid__col-mob-4 mob-visible order-mob-1">
+                                                                            <div class="head-person head-person--medium">
+                                                                                <picture class="head-person__picture">
+                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                </picture>
+                                                                                <h3 class="head-person__name">
+                                                                                    Имя Фамилия
+                                                                                </h3>
+                                                                                <div class="rating rating--medium">
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-3">
                                                                             <div class="stack stack--20">
-                                                                                <div class="head-person head-person--medium">
+                                                                                <div class="head-person head-person--medium mob-hidden">
                                                                                     <picture class="head-person__picture">
                                                                                         <img src="https://placehold.co/1920x1080" alt="">
                                                                                     </picture>
@@ -361,9 +405,9 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="article-review-catalog__info">
-                                                                                <span class="article-review-catalog__work">
-                                                                                    Шкаф
-                                                                                </span>
+                                                                                    <span class="article-review-catalog__work">
+                                                                                        Шкаф
+                                                                                    </span>
                                                                                     <span class="article-review-catalog__service">
                                                                                     Весь комплекс услуг
                                                                                 </span>
@@ -380,8 +424,8 @@
                                                                                 </time>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="grid__col grid__col--1"></div>
-                                                                        <div class="grid__col grid__col--4">
+                                                                        <div class="grid__col grid__col--1 mob-hidden"></div>
+                                                                        <div class="grid__col grid__col--4 order-mob-2">
                                                                             <div class="swiper slider-preview" data-slider="preview">
                                                                                 <div class="swiper-wrapper slider-preview__wrapper">
                                                                                     <div class="swiper-slide slider-preview__slide">
@@ -434,7 +478,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid__col grid__col--3">
+                                            <div class="grid__col grid__col--3 grid__col-mob--4">
                                                 <a class="article-review-catalog" href="#modal-2" data-fancybox="review-gallery">
                                                     <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
@@ -510,9 +554,36 @@
                                                                 </div>
                                                                 <div class="layout-modal__main">
                                                                     <div class="grid">
-                                                                        <div class="grid__col grid__col--3">
+                                                                        <div class="grid__col grid__col-mob-4 mob-visible order-mob-1">
+                                                                            <div class="head-person head-person--medium">
+                                                                                <picture class="head-person__picture">
+                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                </picture>
+                                                                                <h3 class="head-person__name">
+                                                                                    Имя Фамилия
+                                                                                </h3>
+                                                                                <div class="rating rating--medium">
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-3">
                                                                             <div class="stack stack--20">
-                                                                                <div class="head-person head-person--medium">
+                                                                                <div class="head-person head-person--medium mob-hidden">
                                                                                     <picture class="head-person__picture">
                                                                                         <img src="https://placehold.co/1920x1080" alt="">
                                                                                     </picture>
@@ -538,9 +609,9 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="article-review-catalog__info">
-                                                                                <span class="article-review-catalog__work">
-                                                                                    Шкаф
-                                                                                </span>
+                                                                                    <span class="article-review-catalog__work">
+                                                                                        Шкаф
+                                                                                    </span>
                                                                                     <span class="article-review-catalog__service">
                                                                                     Весь комплекс услуг
                                                                                 </span>
@@ -557,8 +628,8 @@
                                                                                 </time>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="grid__col grid__col--1"></div>
-                                                                        <div class="grid__col grid__col--4">
+                                                                        <div class="grid__col grid__col--1 mob-hidden"></div>
+                                                                        <div class="grid__col grid__col--4 order-mob-2">
                                                                             <div class="swiper slider-preview" data-slider="preview">
                                                                                 <div class="swiper-wrapper slider-preview__wrapper">
                                                                                     <div class="swiper-slide slider-preview__slide">
@@ -611,7 +682,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid__col grid__col--3">
+                                            <div class="grid__col grid__col--3 grid__col-mob--4">
                                                 <a class="article-review-catalog" href="#modal-3" data-fancybox="review-gallery">
                                                     <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
@@ -687,9 +758,36 @@
                                                                 </div>
                                                                 <div class="layout-modal__main">
                                                                     <div class="grid">
-                                                                        <div class="grid__col grid__col--3">
+                                                                        <div class="grid__col grid__col-mob-4 mob-visible order-mob-1">
+                                                                            <div class="head-person head-person--medium">
+                                                                                <picture class="head-person__picture">
+                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                </picture>
+                                                                                <h3 class="head-person__name">
+                                                                                    Имя Фамилия
+                                                                                </h3>
+                                                                                <div class="rating rating--medium">
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-3">
                                                                             <div class="stack stack--20">
-                                                                                <div class="head-person head-person--medium">
+                                                                                <div class="head-person head-person--medium mob-hidden">
                                                                                     <picture class="head-person__picture">
                                                                                         <img src="https://placehold.co/1920x1080" alt="">
                                                                                     </picture>
@@ -715,9 +813,9 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="article-review-catalog__info">
-                                                                                <span class="article-review-catalog__work">
-                                                                                    Шкаф
-                                                                                </span>
+                                                                                    <span class="article-review-catalog__work">
+                                                                                        Шкаф
+                                                                                    </span>
                                                                                     <span class="article-review-catalog__service">
                                                                                     Весь комплекс услуг
                                                                                 </span>
@@ -734,8 +832,8 @@
                                                                                 </time>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="grid__col grid__col--1"></div>
-                                                                        <div class="grid__col grid__col--4">
+                                                                        <div class="grid__col grid__col--1 mob-hidden"></div>
+                                                                        <div class="grid__col grid__col--4 order-mob-2">
                                                                             <div class="swiper slider-preview" data-slider="preview">
                                                                                 <div class="swiper-wrapper slider-preview__wrapper">
                                                                                     <div class="swiper-slide slider-preview__slide">
@@ -788,7 +886,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="grid__col grid__col--3">
+                                            <div class="grid__col grid__col--3 grid__col-mob--4">
                                                 <a class="article-review-catalog" href="#modal-4" data-fancybox="review-gallery">
                                                     <div class="head-person head-person--medium">
                                                         <picture class="head-person__picture">
@@ -864,9 +962,36 @@
                                                                 </div>
                                                                 <div class="layout-modal__main">
                                                                     <div class="grid">
-                                                                        <div class="grid__col grid__col--3">
+                                                                        <div class="grid__col grid__col-mob-4 mob-visible order-mob-1">
+                                                                            <div class="head-person head-person--medium">
+                                                                                <picture class="head-person__picture">
+                                                                                    <img src="https://placehold.co/1920x1080" alt="">
+                                                                                </picture>
+                                                                                <h3 class="head-person__name">
+                                                                                    Имя Фамилия
+                                                                                </h3>
+                                                                                <div class="rating rating--medium">
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon active">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                    <svg class="rating__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-3">
                                                                             <div class="stack stack--20">
-                                                                                <div class="head-person head-person--medium">
+                                                                                <div class="head-person head-person--medium mob-hidden">
                                                                                     <picture class="head-person__picture">
                                                                                         <img src="https://placehold.co/1920x1080" alt="">
                                                                                     </picture>
@@ -892,9 +1017,9 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="article-review-catalog__info">
-                                                                                <span class="article-review-catalog__work">
-                                                                                    Шкаф
-                                                                                </span>
+                                                                                    <span class="article-review-catalog__work">
+                                                                                        Шкаф
+                                                                                    </span>
                                                                                     <span class="article-review-catalog__service">
                                                                                     Весь комплекс услуг
                                                                                 </span>
@@ -911,8 +1036,8 @@
                                                                                 </time>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="grid__col grid__col--1"></div>
-                                                                        <div class="grid__col grid__col--4">
+                                                                        <div class="grid__col grid__col--1 mob-hidden"></div>
+                                                                        <div class="grid__col grid__col--4 order-mob-2">
                                                                             <div class="swiper slider-preview" data-slider="preview">
                                                                                 <div class="swiper-wrapper slider-preview__wrapper">
                                                                                     <div class="swiper-slide slider-preview__slide">
@@ -964,7 +1089,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -1020,7 +1144,7 @@
     <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -1107,8 +1231,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -1195,5 +1319,5 @@
 
 
 </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

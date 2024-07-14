@@ -1,0 +1,17 @@
+.bullets-line {
+    height: 3px;
+    display: flex;
+    border-radius: 6px;
+    background-color: #EEEEEE;
+
+    &__item {
+        height: 100%;
+        flex-grow: 1;
+        display: block;
+        border-radius: 6px;
+
+        &.active {
+            background-color: var(--color-green);
+        }
+    }
+}

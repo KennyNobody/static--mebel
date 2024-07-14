@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .slider-section-list {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__slide {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__button {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

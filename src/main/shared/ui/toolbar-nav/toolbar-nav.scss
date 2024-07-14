@@ -30,3 +30,13 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .toolbar-nav {
+        gap: 20px;
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

@@ -8,20 +8,7 @@
     }
 
     &__slide {
-        //opacity: 0;
         height: auto;
-        //visibility: hidden;
-        //transition: 0.3s opacity;
-
-        //&.active {
-        //    opacity: 1;
-        //    visibility: visible;
-        //}
-        //
-        //&.active ~ & {
-        //    opacity: 1;
-        //    visibility: visible;
-        //}
     }
 
     &__controls {
@@ -48,5 +35,37 @@
         height: 38px;
         display: block;
         fill: var(--color-white);
+    }
+
+    &__pagination {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1299px) {
+    .slider-review {
+        width: 100%;
+        height: auto;
+
+        &__main {
+            height: 100%;
+            overflow: visible;
+        }
+
+        &__slide {
+            height: auto;
+        }
+
+        &__controls {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__pagination {
+            display: flex;
+            margin-top: 20px;
+            visibility: visible;
+        }
     }
 }

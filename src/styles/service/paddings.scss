@@ -3,3 +3,11 @@
         padding-bottom: 160px;
     }
 }
+
+@media (max-width: 1299px) {
+    .pb-m {
+        &-90 {
+            padding-bottom: 90px;
+        }
+    }
+}

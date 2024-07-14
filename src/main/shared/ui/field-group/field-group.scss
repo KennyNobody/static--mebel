@@ -40,3 +40,29 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .field-group {
+        &__content {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &:after {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        &__toolbar {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

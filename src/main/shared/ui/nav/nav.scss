@@ -1,7 +1,18 @@
 .nav {
     gap: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    &__main {
+        width: 100%;
+        max-width: 230px;
+    }
+
+    &__mobile-toolbar {
+        display: none;
+        visibility: hidden;
+    }
 
     &__content {
         flex-grow: 1;
@@ -10,4 +21,44 @@
         background-color: #F6F6F7;
         justify-content: space-between;
     }
+
+    &__toolbar {
+        gap: 12px;
+        display: flex;
+        flex-shrink: 0;
+        min-width: 130px;
+        align-items: center;
+    }
 }
+
+@media (max-width: 1299px) {
+    .nav {
+        gap: 12px;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: #FFFFFF;
+        box-shadow: 0 8px 32px 4px #676F7B1A;
+
+        &__mobile-toolbar {
+            display: block;
+            flex-shrink: 0;
+            visibility: visible;
+        }
+
+        &__content {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__main {
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        &__toolbar {
+            gap: 3px;
+            flex-shrink: 0;
+        }
+    }
+}
+

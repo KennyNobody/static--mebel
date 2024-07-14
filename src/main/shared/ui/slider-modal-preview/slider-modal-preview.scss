@@ -11,4 +11,28 @@
         overflow: hidden;
         padding: 0 16px;
     }
+
+    &__pagination {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1299px) {
+    .slider-modal-preview {
+        &__child {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__pagination {
+            left: 0;
+            right: 0;
+            z-index: 1;
+            bottom: 15px;
+            display: flex;
+            position: absolute;
+            visibility: visible;
+        }
+    }
 }

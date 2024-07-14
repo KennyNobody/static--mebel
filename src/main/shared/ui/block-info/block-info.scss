@@ -18,3 +18,17 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 1299px) {
+    .block-info {
+        padding: 0;
+
+        &__editor {
+            margin-bottom: 40px;
+        }
+
+        &__list {
+            gap: 18px;
+        }
+    }
+}

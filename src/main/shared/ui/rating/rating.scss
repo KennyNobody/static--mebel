@@ -30,3 +30,28 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .rating {
+        gap: 5px;
+        display: flex;
+
+        &--large {
+            .rating {
+                &__icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        //&--medium {
+        //    .rating {
+        //        &__icon {
+        //            width: 20px;
+        //            height: 20px;
+        //        }
+        //    }
+        //}
+    }
+}

@@ -1,34 +1,78 @@
 .button-icon {
+    width: 46px;
+    height: 46px;
     display: flex;
     cursor: pointer;
+    position: relative;
     align-items: center;
+    border-radius: 46px;
     transition: 0.3s all;
     justify-content: center;
-    background-color: var(--color-green);
+    background-color: var(--color-white);
 
     &:hover {
-        background-color: #29884E;
-    }
-
-    &:active {
-        opacity: 0.9;
-    }
-
-    &--large {
-        width: 56px;
-        height: 56px;
-        border-radius: 16px;
-
         .button-icon {
             &__icon {
-                width: 24px;
-                height: 24px;
+                fill: var(--color-green);
             }
         }
     }
 
+    &:active {
+        background-color: #1C222E;
+    }
+
     &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #1C222E;
         display: block;
-        fill: var(--color-white)
+        transition: 0.3s all;
+    }
+
+    &__label {
+        top: -3px;
+        right: -3px;
+        height: 18px;
+        display: flex;
+        min-width: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-white);
+        background-color: var(--color-green);
+    }
+}
+
+@media (max-width: 1299px) {
+    .button-icon {
+        width: 38px;
+        height: 38px;
+        background-color: #EBF9F1;
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-green);
+        }
+
+        &__label {
+            top: -3px;
+            right: -3px;
+            height: 18px;
+            display: flex;
+            min-width: 18px;
+            font-size: 12px;
+            font-weight: 600;
+            position: absolute;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            background-color: var(--color-green);
+        }
     }
 }

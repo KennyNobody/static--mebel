@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Детальная портфолио - Мебельница</title>
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
     <div class="page">
         <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -51,9 +60,9 @@
     </div>
 </header>
 
-        <main class="main main--regular pb-160">
+        <main class="main main--regular pb-160 pb-m-90">
             <div class="main__section">
-                <section class="section mb-70">
+                <section class="section mb-70 mbm-35">
                     <div class="container">
                         <div class="stack stack--35">
                             <nav class="breadcrumbs">
@@ -106,22 +115,22 @@
                                 Заказать похожее
                             </span>
                             </a>
-                            <div class="post-stat">
+                            <div class="post-stat mob-hidden">
                                 <div class="post-stat__item">
                                     <svg class="post-stat__icon">
                                         <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
                                     </svg>
                                     <span class="post-stat__caption">
-                                    3569
-                                </span>
+                                        3569
+                                    </span>
                                 </div>
                                 <div class="post-stat__item">
                                     <svg class="post-stat__icon">
                                         <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
                                     </svg>
                                     <span class="post-stat__caption">
-                                    245
-                                </span>
+                                        245
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +138,7 @@
                 </div>
                 <div class="layout-detail__main">
                     <div class="grid">
-                        <div class="grid__col grid__col--3">
+                        <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-2">
                             <div class="stack stack--20">
                                 <div class="editor">
                                     <h6>
@@ -175,11 +184,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__col grid__col--1"></div>
-                        <div class="grid__col grid__col--4">
+                        <div class="grid__col grid__col--1 mob-hidden"></div>
+                        <div class="grid__col grid__col--4 order-mob-1 mbm-35">
                             <div class="slider-modal-preview" data-sync-slider="modal-sync">
                                 <div class="slider-modal-preview__main">
-                                    <div class="swiper" data-sub-slider="main">
+                                    <div class="swiper slider-modal-preview__swiper" data-sub-slider="main">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <picture class="picture-slide picture-slide--main">
@@ -222,6 +231,7 @@
                                                 </picture>
                                             </div>
                                         </div>
+                                        <div class="slider-modal-preview__pagination bullets bullets--dark" data-slider="pagination"></div>
                                     </div>
                                 </div>
                                 <div class="slider-modal-preview__child">
@@ -796,7 +806,7 @@
                                         </div>
                                     </div>
                                     <div class="slider-preview__pagination">
-                                        <div class="bullets bullets--darks" data-slider="pagination"></div>
+                                        <div class="bullets bullets--dark" data-slider="pagination"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1156,7 +1166,7 @@
         <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -1243,8 +1253,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -1331,5 +1341,5 @@
 
 
     </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

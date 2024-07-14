@@ -38,3 +38,15 @@
         transition: 0.3s all;
     }
 }
+
+@media (max-width: 1299px) {
+    .button-tooltip {
+        &--light {
+            .button-tooltip {
+                &__icon {
+                    fill: var(--color-dark);
+                }
+            }
+        }
+    }
+}

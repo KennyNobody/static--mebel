@@ -21,3 +21,19 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .title {
+        font-size: 28px;
+
+        &--decor-underline {
+            &:after {
+                left: 50%;
+                width: 146px;
+                height: 20px;
+                top: calc(100% + 5px);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

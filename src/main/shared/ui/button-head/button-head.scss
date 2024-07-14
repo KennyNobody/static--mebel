@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     border-radius: 12px;
+    transition: 0.3s all;
     justify-content: center;
-    transition: 0.3s opacity;
 
     &__icon {
         display: block;
@@ -52,10 +52,77 @@
                 fill: var(--color-green);
             }
         }
+
+        &:hover {
+            opacity: 1;
+            background-color: var(--color-green);
+
+            .button-head {
+                &__text {
+                    color: var(--color-dark);
+                }
+                &__icon {
+                    fill: var(--color-dark);
+                }
+            }
+        }
+
+        &:focus {
+            opacity: 1;
+            background-color: #209D52;
+        }
     }
 
     &__icon {
         flex-shrink: 0;
         display: block;
+    }
+}
+
+@media (max-width: 1299px) {
+    .button-head {
+        height: 38px;
+
+        &--main {
+            gap: 6px;
+            padding: 0;
+            max-width: 160px;
+            background: none;
+            width: fit-content;
+
+            .button-head {
+                &__icon {
+                    width: 22px;
+                    height: 22px;
+                    fill: var(--color-dark);
+                    transform: translateY(-1px);
+                }
+
+                &__text {
+                    font-size: 18px;
+                    color: var(--color-dark);
+                }
+            }
+        }
+
+        &--small {
+            width: 38px;
+            height: 38px;
+            border-radius: 50px;
+            background-color: #EBF9F1;
+
+            .button-head {
+                &__icon {
+                    width: 24px;
+                    height: 24px;
+                    fill: var(--color-green);
+                }
+
+                &__text {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }
     }
 }

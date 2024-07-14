@@ -39,3 +39,18 @@
         align-items: center;
     }
 }
+
+@media (max-width: 1299px) {
+    .article-promo {
+        padding: 30px;
+        min-height: 500px;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__main {
+            font-size: 14px;
+        }
+    }
+}

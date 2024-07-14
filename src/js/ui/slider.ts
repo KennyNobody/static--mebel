@@ -25,6 +25,8 @@ class Slider {
 
         if (mode === 'promo') this.initPromoSlider(el);
 
+        if (mode === 'process') this.initProcessSlider(el);
+
         if (this.sliderInstance) {
             this.initControls(el);
         }
@@ -55,20 +57,39 @@ class Slider {
         this.sliderInstance = new Swiper(el, {
             loop: false,
             enabled: true,
-            slidesPerView: 7,
+            slidesPerView: 'auto',
+            modules: [Pagination],
             slideActiveClass: 'active',
             spaceBetween: 20,
+            breakpoints: {
+                1299: {
+                    spaceBetween: 20,
+                    slidesPerView: 7,
+                }
+            },
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'active',
+                el: '[data-slider="pagination"]',
+                bulletClass: 'bullets-line__item',
+                simulateTouch: false,
+            },
         });
     }
 
     private initSectionListSlider(el: Element): void {
         this.sliderInstance = new Swiper(el, {
-            loop: false,
-            enabled: true,
-            slidesPerView: 4,
-            slideActiveClass: 'active',
-            spaceBetween: 20,
-            allowTouchMove: false,
+            enabled: false,
+            breakpoints: {
+                1299: {
+                    loop: true,
+                    enabled: true,
+                    spaceBetween: 20,
+                    slidesPerView: 4,
+                    allowTouchMove: false,
+                    slideActiveClass: 'active',
+                }
+            },
         });
     }
 
@@ -76,11 +97,26 @@ class Slider {
         this.sliderInstance = new Swiper(el, {
             loop: false,
             enabled: true,
-            allowTouchMove: false,
-            direction: 'vertical',
+            allowTouchMove: true,
             slidesPerView: 'auto',
+            modules: [Pagination],
             slideActiveClass: 'active',
             spaceBetween: 25,
+            breakpoints: {
+                1299: {
+                    spaceBetween: 25,
+                    direction: 'vertical',
+                    slidesPerView: 'auto',
+                    allowTouchMove: false,
+                }
+            },
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'active',
+                el: '[data-slider="pagination"]',
+                bulletClass: 'bullets-line__item',
+                simulateTouch: false,
+            },
         });
     }
 
@@ -117,6 +153,28 @@ class Slider {
                 bulletClass: 'bullets-flex__item',
             },
         })
+    }
+
+    private initProcessSlider(el: Element): void {
+        this.sliderInstance = new Swiper(el, {
+            loop: false,
+            enabled: true,
+            spaceBetween: 0,
+            modules: [Pagination],
+            slidesPerView: 'auto',
+            slideActiveClass: 'active',
+            breakpoints: {
+                1299: {
+                    enabled: false,
+                }
+            },
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'active',
+                el: '[data-slider="pagination"]',
+                bulletClass: 'bullets-line__item',
+            },
+        });
     }
 }
 

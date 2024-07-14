@@ -16,3 +16,17 @@
         box-shadow: -4px 4px 100px #50505040;
     }
 }
+
+@media (max-width: 1299px) {
+    .layout-detail {
+        &__header {
+            margin-bottom: 30px;
+        }
+
+        &__main {
+            padding: 0;
+            box-shadow: none;
+            border-radius: 15px;
+        }
+    }
+}

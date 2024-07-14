@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>О сервисе - Мебельница</title>
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
     <div class="page">
         <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -51,8 +60,8 @@
     </div>
 </header>
 
-        <main class="main main--regular pb-160">
-            <div class="main__section mb-90">
+        <main class="main main--regular pb-160 pb-m-90">
+            <div class="main__section mb-90 mbm-70">
                 <section class="section">
                     <div class="container">
                         <nav class="breadcrumbs">
@@ -69,12 +78,12 @@
                     </div>
                 </section>
             </div>
-            <div class="main__section mb-180">
+            <div class="main__section mb-180 mbm-90">
                 <section class="section">
     <div class="container">
-        <div class="stack stack--200">
+        <div class="stack stack--200 stack-mob--50">
             <div class="grid">
-                <div class="grid__col grid__col--4">
+                <div class="grid__col grid__col--4 order-mob-2">
                     <div class="block-info">
                         <div class="block-info__title">
                             <h2 class="title">
@@ -131,14 +140,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__col grid__col--4">
+                <div class="grid__col grid__col--4 order-mob-1 mbm-35">
                     <picture class="picture picture--about">
                         <img src="./assets/images/about-1.jpg" alt="">
                     </picture>
                 </div>
             </div>
             <div class="grid">
-                <div class="grid__col grid__col--4">
+                <div class="grid__col grid__col--4 mbm-35">
                     <picture class="picture picture--about">
                         <img src="./assets/images/about-2.jpg" alt="">
                     </picture>
@@ -209,102 +218,106 @@
             <div class="main__section">
                 <section class="section">
     <div class="container">
-        <div class="stack stack--60">
-            <h2 class="title uppercase">
+        <div class="stack stack--60 stack-mob--40">
+            <h2 class="title uppercase z-index-2">
                 Как мы работаем
             </h2>
             <div class="intro-process">
                 <div class="intro-process__decor intro-process__decor--1"></div>
                 <div class="intro-process__decor intro-process__decor--2"></div>
                 <div class="intro-process__decor intro-process__decor--3"></div>
-                <div class="intro-process__content">
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                <div class="swiper intro-process__slider" data-slider="process">
+                    <div class="swiper-wrapper intro-process__content">
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 01
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-paper"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик создает заказ
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                            <a href="" class="article-process__link">
-                                Как создать заказ?
-                            </a>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-paper"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик создает заказ
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <a href="" class="article-process__link">
+                                    Как создать заказ?
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 02
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-message"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Мастер находит заказ <br> и отправляет предложение
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                            <a href="" class="article-process__link">
-                                Как обменяться контактами?
-                            </a>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
-                            <span class="article-process__number">
-                                03
-                            </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-check"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик выбирает мастера, <br> и начинается работа
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-message"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Мастер находит заказ <br> и отправляет предложение
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <a href="" class="article-process__link">
+                                    Как обменяться контактами?
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
+                                <span class="article-process__number">
+                                    03
+                                </span>
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-check"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик выбирает мастера, <br> и начинается работа
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 04
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-win"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик получает <br>
-                                выполненную работу, <br>
-                                а мастер — отзыв <br>
-                                и рейтинговые баллы
-                            </h3>
-                            <a href="" class="article-process__link">
-                                Как устроен рейтинг?
-                            </a>
-                        </article>
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-win"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик получает <br>
+                                    выполненную работу, <br>
+                                    а мастер — отзыв <br>
+                                    и рейтинговые баллы
+                                </h3>
+                                <div class="article-process__content"></div>
+                                <a href="" class="article-process__link">
+                                    Как устроен рейтинг?
+                                </a>
+                            </article>
+                        </div>
                     </div>
+                    <div class="intro-process__pagination bullets-line" data-slider="pagination"></div>
                 </div>
             </div>
         </div>
@@ -316,7 +329,7 @@
         <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -403,8 +416,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -491,5 +504,5 @@
 
 
     </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

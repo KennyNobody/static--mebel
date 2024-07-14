@@ -18,8 +18,25 @@
         text-transform: uppercase;
     }
 
-    &__controls {
+    &__toolbar {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1299px) {
+    .none {
+        gap: 25px;
+
+        &__image {}
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__toolbar {
+            width: 100%;
+            max-width: 460px;
+        }
     }
 }

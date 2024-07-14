@@ -22,5 +22,9 @@
     &__value {
         font-size: 14px;
         font-weight: 500;
+
+        &--accent {
+            color: var(--color-green);
+        }
     }
 }

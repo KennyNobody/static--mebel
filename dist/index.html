@@ -13,20 +13,29 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
     <div class="page">
         <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -62,11 +71,11 @@
 </header>
 
         <main class="main main--intro">
-            <div class="main__section mb-150">
+            <div class="main__section mb-150 mbm-90">
                 <section>
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--8">
+            <div class="grid__col grid__col--8 grid__col-mob--4 mbm-35">
                 <div class="slider-intro swiper" data-slider="intro">
                     <button class="button-slider slider-intro__button slider-intro__button--left" data-button="prev">
                         <svg class="button-slider__icon">
@@ -180,10 +189,11 @@
                             </a>
                         </div>
                     </div>
+                    <div class="slider-intro__pagination bullets-line" data-slider="pagination"></div>
                 </div>
             </div>
-            <div class="grid__col grid__col--6">
-                <a href="./" class="article-promo article-promo--left">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <a href="./" class="article-promo">
                     <h1 class="article-promo__title">
                         Баннер
                     </h1>
@@ -194,7 +204,7 @@
                     </div>
                 </a>
             </div>
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="swiper slider-promo" data-slider="promo">
                     <div class="swiper-wrapper slider-promo__wrapper">
                         <div class="swiper-slide slider-promo__slide">
@@ -244,10 +254,10 @@
 </section>
 
             </div>
-            <div class="main__section mb-150">
+            <div class="main__section mb-150 mbm-90">
                 <section class="section">
     <div class="container">
-        <div class="stack stack--60">
+        <div class="stack stack--60 stack-mob--40">
             <h2 class="title title--decor-underline center">
                 Работы специалистов
             </h2>
@@ -346,11 +356,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid__col grid__col--2">
+                <div class="grid__col grid__col--2 grid__col--4">
                     <a href="#" class="article-work article-work--regular">
                         <picture class="article-work__picture">
                             <img src="https://placehold.co/1920x1080" alt="Заголовок">
                         </picture>
+                        <h3 class="article-work__title">
+                            Шкаф с боковыми открытыми полочками
+                        </h3>
                         <div class="article-work__toolbar">
                             <div class="article-work__info">
                                 <picture class="article-work__logo">
@@ -383,11 +396,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid__col grid__col--2">
+                <div class="grid__col grid__col--2 grid__col--4">
                     <a href="#" class="article-work article-work--regular">
                         <picture class="article-work__picture">
                             <img src="https://placehold.co/1920x1080" alt="Заголовок">
                         </picture>
+                        <h3 class="article-work__title">
+                            Шкаф с боковыми открытыми полочками
+                        </h3>
                         <div class="article-work__toolbar">
                             <div class="article-work__info">
                                 <picture class="article-work__logo">
@@ -420,11 +436,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid__col grid__col--2">
+                <div class="grid__col grid__col--2 grid__col--4">
                     <a href="#" class="article-work article-work--regular">
                         <picture class="article-work__picture">
                             <img src="https://placehold.co/1920x1080" alt="Заголовок">
                         </picture>
+                        <h3 class="article-work__title">
+                            Шкаф с боковыми открытыми полочками
+                        </h3>
                         <div class="article-work__toolbar">
                             <div class="article-work__info">
                                 <picture class="article-work__logo">
@@ -457,11 +476,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid__col grid__col--2">
+                <div class="grid__col grid__col--2 grid__col--4">
                     <a href="#" class="article-work article-work--regular">
                         <picture class="article-work__picture">
                             <img src="https://placehold.co/1920x1080" alt="Заголовок">
                         </picture>
+                        <h3 class="article-work__title">
+                            Шкаф с боковыми открытыми полочками
+                        </h3>
                         <div class="article-work__toolbar">
                             <div class="article-work__info">
                                 <picture class="article-work__logo">
@@ -496,7 +518,7 @@
                 </div>
             </div>
             <div class="flex-center">
-                <a href="" class="button button--large">
+                <a href="" class="button button--large button--green">
                     <span class="button__text">
                         Смотреть больше проектов
                     </span>
@@ -507,10 +529,10 @@
 </section>
 
             </div>
-            <div class="main__section mb-150">
+            <div class="main__section mb-150 mbm-90">
                 <section class="section section-intro-reviews" style="background-image: url('./assets/images/bg-intro-reviews.jpg')">
     <div class="container">
-        <div class="stack stack--50">
+        <div class="stack stack--50 stack-mob--30">
             <h2 class="title uppercase">
                 Отзывы наших клиентов
             </h2>
@@ -531,30 +553,34 @@
                     <div class="swiper-wrapper slider-review__wrapper">
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -567,13 +593,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -586,30 +612,34 @@
                         </div>
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -622,13 +652,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -641,30 +671,34 @@
                         </div>
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -677,13 +711,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -696,30 +730,34 @@
                         </div>
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -732,13 +770,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -751,30 +789,34 @@
                         </div>
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -787,13 +829,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -806,30 +848,34 @@
                         </div>
                         <div class="swiper-slide slider-review__slide">
                             <article class="article-review">
-                                <picture class="article-review__picture">
-                                    <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
-                                </picture>
                                 <div class="article-review__content">
-                                    <h3 class="article-review__title">
-                                        Екатерина Бурунова
-                                    </h3>
-                                    <div class="article-review__rating">
-                                        <div class="rating rating--large">
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon active">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
-                                            <svg class="rating__icon">
-                                                <use href="./assets/sprite/sprite.svg#icon-star"></use>
-                                            </svg>
+                                    <div class="article-review__head">
+                                        <picture class="article-review__picture">
+                                            <img src="https://placehold.co/1920x1080" alt="Имя Фамилия">
+                                        </picture>
+                                        <div class="article-review__head-content">
+                                            <h3 class="article-review__title">
+                                                Екатерина Бурунова
+                                            </h3>
+                                            <div class="article-review__rating">
+                                                <div class="rating rating--large">
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon active">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon">
+                                                        <use href="./assets/sprite/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="article-review__editor">
@@ -842,13 +888,13 @@
                                     </div>
                                     <div class="article-review__gallery">
                                         <div class="preview-gallery preview-gallery--center">
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
-                                            <a href="" class="preview-gallery__item">
+                                            <a href="https://placehold.co/1920x1080" class="preview-gallery__item" data-fancybox="intro-review-gallery">
                                                 <img src="https://placehold.co/1920x1080" alt="Изображение отзыва">
                                             </a>
                                         </div>
@@ -860,6 +906,7 @@
                             </article>
                         </div>
                     </div>
+                    <div class="slider-review__pagination bullets-line" data-slider="pagination"></div>
                 </div>
             </div>
         </div>
@@ -867,105 +914,109 @@
 </section>
 
             </div>
-            <div class="main__section mb-150">
+            <div class="main__section mb-150 mbm-90">
                 <section class="section">
     <div class="container">
-        <div class="stack stack--60">
-            <h2 class="title uppercase">
+        <div class="stack stack--60 stack-mob--40">
+            <h2 class="title uppercase z-index-2">
                 Как мы работаем
             </h2>
             <div class="intro-process">
                 <div class="intro-process__decor intro-process__decor--1"></div>
                 <div class="intro-process__decor intro-process__decor--2"></div>
                 <div class="intro-process__decor intro-process__decor--3"></div>
-                <div class="intro-process__content">
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                <div class="swiper intro-process__slider" data-slider="process">
+                    <div class="swiper-wrapper intro-process__content">
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 01
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-paper"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик создает заказ
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                            <a href="" class="article-process__link">
-                                Как создать заказ?
-                            </a>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-paper"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик создает заказ
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <a href="" class="article-process__link">
+                                    Как создать заказ?
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 02
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-message"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Мастер находит заказ <br> и отправляет предложение
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                            <a href="" class="article-process__link">
-                                Как обменяться контактами?
-                            </a>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
-                            <span class="article-process__number">
-                                03
-                            </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-check"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик выбирает мастера, <br> и начинается работа
-                            </h3>
-                            <div class="article-process__content">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="intro-process__item">
-                        <article class="article-process">
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-message"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Мастер находит заказ <br> и отправляет предложение
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <a href="" class="article-process__link">
+                                    Как обменяться контактами?
+                                </a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
+                                <span class="article-process__number">
+                                    03
+                                </span>
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-check"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик выбирает мастера, <br> и начинается работа
+                                </h3>
+                                <div class="article-process__content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide intro-process__item">
+                            <article class="article-process">
                             <span class="article-process__number">
                                 04
                             </span>
-                            <div class="article-process__box">
-                                <svg class="article-process__icon">
-                                    <use href="./assets/sprite/sprite.svg#icon-process-win"></use>
-                                </svg>
-                            </div>
-                            <h3 class="article-process__title">
-                                Заказчик получает <br>
-                                выполненную работу, <br>
-                                а мастер — отзыв <br>
-                                и рейтинговые баллы
-                            </h3>
-                            <a href="" class="article-process__link">
-                                Как устроен рейтинг?
-                            </a>
-                        </article>
+                                <div class="article-process__box">
+                                    <svg class="article-process__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-process-win"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="article-process__title">
+                                    Заказчик получает <br>
+                                    выполненную работу, <br>
+                                    а мастер — отзыв <br>
+                                    и рейтинговые баллы
+                                </h3>
+                                <div class="article-process__content"></div>
+                                <a href="" class="article-process__link">
+                                    Как устроен рейтинг?
+                                </a>
+                            </article>
+                        </div>
                     </div>
+                    <div class="intro-process__pagination bullets-line" data-slider="pagination"></div>
                 </div>
             </div>
         </div>
@@ -977,7 +1028,7 @@
         <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -1064,8 +1115,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -1152,5 +1203,5 @@
 
 
     </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

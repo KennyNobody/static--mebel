@@ -37,3 +37,16 @@
         line-height: 1.4;
     }
 }
+
+@media (max-width: 1299px) {
+    .factoid-info {
+        &__circle {
+            width: 42px;
+            height: 42px;
+
+            img {
+                height: 18px;
+            }
+        }
+    }
+}

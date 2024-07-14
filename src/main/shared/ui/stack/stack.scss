@@ -58,3 +58,23 @@
         gap: 200px;
     }
 }
+
+@media (max-width: 1299px) {
+    .stack-mob {
+        &--20 {
+            gap: 20px;
+        }
+
+        &--30 {
+            gap: 30px;
+        }
+
+        &--40 {
+            gap: 40px;
+        }
+
+        &--50 {
+            gap: 50px;
+        }
+    }
+}

@@ -7,3 +7,15 @@
         margin-bottom: 16px;
     }
 }
+
+@media (max-width: 1299px) {
+    .profile-columns {
+        columns: 1;
+        column-gap: 16px;
+
+        & > * {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+    }
+}

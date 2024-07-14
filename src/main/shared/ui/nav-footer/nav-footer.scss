@@ -32,3 +32,10 @@
         transition: 0.3s all;
     }
 }
+
+@media (max-width: 1299px) {
+    .nav-footer {
+        gap: 25px;
+    }
+}
+

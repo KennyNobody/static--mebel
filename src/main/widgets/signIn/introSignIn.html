@@ -2,12 +2,59 @@
     <picture class="section-sign-form__layer">
         <img src="./assets/images/bg-section-sign.svg" alt="">
     </picture>
+    <picture class="section-sign-form__layer-mobile">
+        <img src="./assets/images/bg-section-sign-mobile.svg" alt="">
+    </picture>
     <div class="container section-sign-form__container">
         <picture class="section-sign-form__picture">
             <img src="./assets/images/form-ill-1.png" alt="">
         </picture>
         <div class="section-sign-form__content">
+            <div class="form-card">
+                <div class="form-card__header">
+                    <div class="form-card__head-toolbar">
+                        <span class="active">Регистрация</span>
+                        <span>/</span>
+                        <a href="">Вход</a>
+                    </div>
+                </div>
+                <div class="form-card__main">
+                    <label class="input-ui" data-input="block">
+                        <div class="input-ui__wrapper">
+                            <input type="text" class="input-ui__field" placeholder="" data-input="field">
+                            <p class="input-ui__title">
+                                Email
+                            </p>
+                        </div>
+                        <div class="input-ui__footer" data-input="message"></div>
+                    </label>
+                    <label class="input-ui input-ui--password" data-input="block">
+                        <div class="input-ui__wrapper">
+                            <input type="password" class="input-ui__field" placeholder="" data-input="field">
+                            <p class="input-ui__title">
+                                Пароль
+                            </p>
+                            <button data-input="button-type" class="input-ui__button"></button>
+                        </div>
+                        <div class="input-ui__footer" data-input="message"></div>
+                    </label>
+                </div>
+                <div class="form-card__controls">
+                    <div class="stack stack--14">
+                        <div class="stack stack--8">
+                            <button class="button button--green button--large full-width" type="button">
+                                <span class="button__text">
+                                    Войти
+                                </span>
+                            </button>
+                        </div>
 
+                        <button class="button-minor full-width" type="button">
+                            Забыли пароль?
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

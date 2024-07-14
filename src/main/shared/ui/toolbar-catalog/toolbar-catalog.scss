@@ -3,6 +3,11 @@
     gap: 20px 10px;
     flex-wrap: wrap;
 
+    &__filter {
+        display: none;
+        visibility: hidden;
+    }
+
     &__search {
         width: 50%;
     }
@@ -13,5 +18,35 @@
 
     &__items {
         width: 100%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .toolbar-catalog {
+        gap: 16px;
+
+        &__filter {
+            order: 1;
+            display: block;
+            visibility: visible;
+            width: calc(50% - 8px);
+        }
+
+        &__search {
+            width: 100%;
+        }
+
+        &__select {
+            order: 2;
+            width: calc(50% - 8px);
+        }
+
+        &__search {
+            order: 3;
+        }
+
+        &__items {
+            order: 4;
+        }
     }
 }

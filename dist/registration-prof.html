@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -64,14 +73,43 @@
             <img src="./assets/images/form-ill-2.png" alt="">
         </picture>
         <div class="section-sign-form__content">
-            <div class="form-card">
+            <div class="form-card form-card--fix-height">
                 <div class="form-card__header">
-                    <h2 class="form-card__title">
-                        Придумайте <br> новый пароль
-                    </h2>
+                    <div class="form-card__head-toolbar">
+                        <span class="active">Регистрация</span>
+                        <span>/</span>
+                        <a href="">Вход</a>
+                    </div>
                 </div>
                 <div class="form-card__main">
-                    2
+                    <label class="input-ui" data-input="block">
+                        <div class="input-ui__wrapper">
+                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                            <p class="input-ui__title">
+                                Фамилия
+                            </p>
+                        </div>
+                        <div class="input-ui__footer" data-input="message"></div>
+                    </label>
+                    <label class="input-ui" data-input="block">
+                        <div class="input-ui__wrapper">
+                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                            <p class="input-ui__title">
+                                Имя
+                            </p>
+                        </div>
+                        <div class="input-ui__footer" data-input="message"></div>
+                    </label>
+                    <label class="input-ui" data-input="block">
+                        <div class="input-ui__wrapper">
+                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                            <p class="input-ui__title">
+                                +7 (000) 000-00-00
+                            </p>
+                        </div>
+                        <div class="input-ui__footer" data-input="message"></div>
+                    </label>
+
                 </div>
                 <div class="form-card__inputs">
                     <label class="checkbox-text">
@@ -82,8 +120,32 @@
                         </p>
                     </label>
                 </div>
-                <div class="form-card__footer">
-                    3
+                <div class="form-card__controls">
+                    <div class="stack stack--14">
+                        <div class="stack stack--8">
+                            <button class="button button--green button--large full-width" type="button">
+                                                <span class="button__text">
+                                                    Продолжить
+                                                </span>
+                            </button>
+                            <p class="caption-form">
+                                Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на обработку персональных данных.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-card__pagination">
+                    <div class="bullets bullets--green">
+                        <div class="bullets__item active">
+                            <span class="bullets__item-content"></span>
+                        </div>
+                        <div class="bullets__item">
+                            <span class="bullets__item-content"></span>
+                        </div>
+                        <div class="bullets__item">
+                            <span class="bullets__item-content"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +157,7 @@
     <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -182,8 +244,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -270,5 +332,5 @@
 
 
 </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

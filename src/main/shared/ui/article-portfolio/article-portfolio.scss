@@ -60,3 +60,45 @@
         transition: 0.3s opacity;
     }
 }
+
+@media (max-width: 1299px) {
+    .article-portfolio {
+        padding-bottom: 15px;
+
+        &__link {
+            gap: 16px;
+            display: flex;
+            border-radius: 0;
+            flex-direction: column;
+        }
+
+        &__picture {
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        &__content {
+            gap: 15px;
+            opacity: 1;
+            //padding: 14px;
+            position: static;
+            background: none;
+            flex-direction: row;
+            padding: 0 30px 0 0;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-weight: 500;
+            color: var(--color-dark);
+        }
+
+        &__tooltip {
+            right: 0;
+            top: auto;
+            opacity: 1;
+            bottom: 17px;
+            position: absolute;
+        }
+    }
+}

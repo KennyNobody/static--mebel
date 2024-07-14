@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Портфолио - Мебельница</title>
-<link href="css/main.629d.css" rel="stylesheet"></head>
+<link href="css/main.32b3.css" rel="stylesheet"></head>
 <body class="body">
     <div class="page">
         <header class="section section--header">
     <div class="container">
         <nav class="nav">
-            <a href="./" class="button-head button-head--main">
-                <svg class="button-head__icon">
-                    <use href="./assets/sprite/sprite.svg#icon-house"></use>
-                </svg>
-                <span class="button-head__text">
-                    Мебельница
-                </span>
-            </a>
+            <div class="nav__mobile-toolbar">
+                <button class="button-menu">
+                    <svg class="button-menu__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav__main">
+                <a href="./" class="button-head button-head--main">
+                    <svg class="button-head__icon">
+                        <use href="./assets/sprite/sprite.svg#icon-house"></use>
+                    </svg>
+                    <span class="button-head__text">
+                        Мебельница
+                    </span>
+                </a>
+            </div>
             <div class="nav__content">
                 <a href="./portfolio.html" class="button-head button-head--regular">
                     <span class="button-head__text">
@@ -51,7 +60,7 @@
     </div>
 </header>
 
-        <main class="main main--regular pb-160">
+        <main class="main main--regular pb-160 pb-m-90">
             <div class="main__section">
                 <section class="section mb-50">
                     <div class="container">
@@ -75,7 +84,7 @@
                 Портфолио
             </h2>
             <div class="grid">
-                <div class="grid__col grid__col--2">
+                <div class="grid__col grid__col--2 grid__col-mob--4 mob-hidden">
                     <form action="#" class="filter-aside">
                         <div class="filter-aside__main">
                             <h3 class="filter-aside__title">
@@ -354,9 +363,19 @@
                         </div>
                     </form>
                 </div>
-                <div class="grid__col grid__col--6">
+                <div class="grid__col grid__col--6 grid__col-mob--4">
                     <div class="stack stack--20">
                         <form class="toolbar-catalog">
+                            <div class="toolbar-catalog__filter">
+                                <button class="button-filter" type="button">
+                                    <span class="button-filter__text">
+                                        Фильтр
+                                    </span>
+                                    <svg class="button-filter__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-filter"></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <div class="toolbar-catalog__search">
                                 <div class="form-search">
                                     <input type="text" placeholder="Я ищу..." class="form-search__input">
@@ -536,7 +555,7 @@
                         <div class="articles">
                             <div class="articles__main">
                                 <div class="grid grid--6">
-                                    <div class="grid__col grid__col--2">
+                                    <div class="grid__col grid__col--2 grid__col-mob--4">
                                         <a href="#" class="article-work article-work--regular">
                                             <picture class="article-work__picture">
                                                 <img src="https://placehold.co/1920x1080" alt="Заголовок">
@@ -573,7 +592,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col--2">
+                                    <div class="grid__col grid__col--2 grid__col-mob--4">
                                         <a href="#" class="article-work article-work--regular">
                                             <picture class="article-work__picture">
                                                 <img src="https://placehold.co/1920x1080" alt="Заголовок">
@@ -610,7 +629,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col--2">
+                                    <div class="grid__col grid__col--2 grid__col-mob--4">
                                         <a href="#" class="article-work article-work--regular">
                                             <picture class="article-work__picture">
                                                 <img src="https://placehold.co/1920x1080" alt="Заголовок">
@@ -647,7 +666,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col--2">
+                                    <div class="grid__col grid__col--2 grid__col-mob--4">
                                         <a href="#" class="article-work article-work--regular">
                                             <picture class="article-work__picture">
                                                 <img src="https://placehold.co/1920x1080" alt="Заголовок">
@@ -739,7 +758,7 @@
         <footer class="section section--footer">
     <div class="container">
         <div class="grid">
-            <div class="grid__col grid__col--2">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
                 <div class="stack stack--25">
                     <a href="" class="button-head button-head--main">
                         <svg class="button-head__icon">
@@ -826,8 +845,8 @@
                     </div>
                 </div>
             </div>
-            <div class="grid__col grid__col--2">
-                <div class="stack stack--30">
+            <div class="grid__col grid__col--2 grid__col-mob--4">
+                <div class="stack stack--30 stack-mob--20">
                     <div class="nav-footer">
                         <h4 class="nav-footer__title">
                             Помощь
@@ -914,5 +933,5 @@
 
 
     </div>
-<script defer src="bundle.8ac5.js"></script></body>
+<script defer src="bundle.4263.js"></script></body>
 </html>

@@ -2,6 +2,10 @@
     width: 100%;
     position: relative;
 
+    &__slider {
+        overflow: visible;
+    }
+
     &__decor {
         position: absolute;
 
@@ -62,8 +66,8 @@
             left: 59px;
             z-index: 2;
             content: "";
+            width: 900px;
             height: 162px;
-            width: 1045px;
             display: block;
             position: absolute;
             background-size: contain;
@@ -113,6 +117,125 @@
             &:after {
                 background-image: url("./assets/images/decor-angle-white.svg");
             }
+        }
+    }
+
+    &__pagination {
+        display: none;
+        margin-top: 15px;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1299px) {
+    .intro-process {
+        &__slider {
+
+        }
+
+        &__decor {
+            position: absolute;
+
+            &--1 {
+                left: -150px;
+                width: 233px;
+                height: 233px;
+                bottom: -45px;
+                display: block;
+                position: absolute;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("./assets/images/process-decor-1.png");
+            }
+
+            &--2 {
+                top: -91px;
+                right: -46px;
+                width: 221px;
+                height: 124px;
+                display: block;
+                position: absolute;
+                background-size: contain;
+                transform: rotate(-28deg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("./assets/images/process-decor-2.png");
+            }
+
+            &--3 {
+                top: 44px;
+                right: -76px;
+                width: 155px;
+                height: 89px;
+                display: block;
+                position: absolute;
+                background-size: contain;
+                transform: rotate(149deg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("./assets/images/process-decor-3.png");
+            }
+        }
+
+        &__content {
+            display: flex;
+            overflow: visible;
+            //position: relative;
+            //border-radius: 20px;
+            //grid-auto-flow: dense;
+            //box-shadow: 0 30px 60px #50505033;
+            //grid-template-rows: minmax(0, 1fr);
+            //grid-template-columns: repeat(4, minmax(0, 1fr));
+            //
+            &:after {
+                width: 990px;
+            }
+        }
+
+        &__item {
+            height: auto;
+            width: 330px;
+            //&:after {
+            //    top: 140px;
+            //    content: "";
+            //    z-index: 1;
+            //    width: 38px;
+            //    height: 46px;
+            //    display: block;
+            //    position: absolute;
+            //    left: calc(100% - 7px);
+            //    background-size: contain;
+            //    background-repeat: no-repeat;
+            //    background-position: left center;
+            //}
+
+            &:first-child {
+                border-radius: 20px 0 0 20px;
+            }
+
+            &:last-child {
+                border-radius: 0 20px 20px 0;
+            }
+
+            &:nth-child(2n + 1) {
+                &:after {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+
+            &:nth-child(2n) {
+                &:after {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        &__pagination {
+            display: flex;
+            visibility: visible;
         }
     }
 }

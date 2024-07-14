@@ -71,3 +71,61 @@
         font-weight: 300;
     }
 }
+
+@media (max-width: 1299px) {
+    .article-review {
+        padding-top: 0;
+
+        &__head {
+            gap: 14px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        &__picture {
+            width: 56px;
+            border: none;
+            height: 56px;
+            flex-shrink: 0;
+            transform: none;
+            position: static;
+        }
+
+        &__content {
+            text-align: left;
+            padding: 25px 15px 25px;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__rating {
+            display: flex;
+            margin-bottom: 0;
+            justify-content: flex-start;
+        }
+
+        &__editor {
+            font-size: 14px;
+
+            p {
+                margin-bottom: 1em;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__gallery {
+            margin-bottom: 18px;
+        }
+
+        &__time {
+            font-size: 14px;
+        }
+    }
+}

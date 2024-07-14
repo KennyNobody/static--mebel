@@ -23,3 +23,21 @@
         justify-content: space-between;
     }
 }
+
+@media (max-width: 1299px) {
+    .layout-modal {
+        &__header {
+            margin-bottom: 10px;
+        }
+
+        &__main {
+            padding: 20px 15px;
+            border-radius: 15px;
+        }
+
+        &__footer {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

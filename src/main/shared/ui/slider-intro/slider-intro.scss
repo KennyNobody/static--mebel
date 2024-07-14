@@ -1,10 +1,6 @@
 .slider-intro {
     overflow: visible;
 
-    &__wrapper {
-        padding-top: 15px;
-    }
-
     &__slide {
         opacity: 0;
         visibility: hidden;
@@ -57,6 +53,30 @@
 
         &--right {
             left: calc(100% + 20px);
+        }
+    }
+
+    &__pagination {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1299px) {
+    .slider-intro {
+        &__slide {
+            width: 156px;
+        }
+
+        &__button {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__pagination {
+            display: flex;
+            margin-top: 25px;
+            visibility: visible;
         }
     }
 }

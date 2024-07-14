@@ -73,3 +73,31 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 1299px) {
+    .aside-profile {
+        padding: 0 20px 40px;
+
+        &--offset {
+            transform: translateY(0);
+            //transform: translateY(-180px);
+        }
+
+        &__header {
+            margin: -60px auto 20px;
+        }
+
+        &__status {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__stat {
+            margin-bottom: 30px;
+        }
+
+        &__info {
+            gap: 20px;
+        }
+    }
+}

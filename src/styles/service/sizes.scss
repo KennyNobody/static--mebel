@@ -1,3 +1,24 @@
 .full-width {
     width: 100%;
 }
+
+.mob-visible {
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 1299px) {
+    .mob-full-width {
+        width: 100%;
+    }
+
+    .mob-hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mob-visible {
+        display: block;
+        visibility: visible;
+    }
+}
