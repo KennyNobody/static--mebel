@@ -7,6 +7,8 @@ import {SyncSlider} from "../ui/syncSlider";
 import { Fancybox } from "@fancyapps/ui";
 import {Input} from "../ui/input";
 import {SortList} from "../ui/sortList";
+import {Form} from "../ui/form";
+import IMask from "imask";
 
 class App {
     constructor() {
@@ -23,6 +25,8 @@ class App {
         this.initFancybox();
         this.initForms();
         this.initSortList();
+        this.initForm();
+        this.initInputMask();
     }
 
     private initSliders = (el?: Element) => {
@@ -100,6 +104,20 @@ class App {
         const elements: NodeListOf<Element> = document.querySelectorAll('[data-sort-list="block"]');
 
         elements.forEach((item) => new SortList(item));
+    }
+
+    private initForm = () => {
+        const elements: NodeListOf<Element> = document.querySelectorAll('[data-form]');
+
+        elements.forEach((item) => new Form(item));
+    }
+
+    private initInputMask = () => {
+        const elements: NodeListOf<HTMLTextAreaElement> = document.querySelectorAll('[data-input-mask="phone"]');
+
+        elements.forEach((item) => IMask(item, {
+            mask: '+{7}(000)000-00-00'
+        }))
     }
 }
 

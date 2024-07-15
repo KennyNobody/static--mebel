@@ -64,6 +64,7 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "choices.js": "^10.2.0",
+    "imask": "^7.6.1",
     "swiper": "^11.1.4",
     "the-new-css-reset": "^1.11.2"
   }

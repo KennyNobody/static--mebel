@@ -46,6 +46,17 @@
         text-transform: uppercase;
     }
 
+    &__section {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
     &__message {
         color: #3B374E;
         font-size: 16px;

@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Формы</title>
-<link href="css/main.32b3.css" rel="stylesheet"></head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link href="css/main.e20a.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
@@ -73,7 +84,7 @@
                 <div class="container">
                     <div class="stack stack--60">
                         <div style="width: 360px;">
-                            <div class="form-card">
+                            <div class="form-card" data-form>
                                 <div class="form-card__header">
                                     <div class="form-card__head-toolbar">
                                         <span class="active">Регистрация</span>
@@ -81,38 +92,40 @@
                                         <a href="">Вход</a>
                                     </div>
                                 </div>
-                                <div class="form-card__main">
-                                    <label class="input-ui" data-input="block">
-                                        <div class="input-ui__wrapper">
-                                            <input type="text" class="input-ui__field" placeholder="" data-input="field">
-                                            <p class="input-ui__title">
-                                                Email
-                                            </p>
-                                        </div>
-                                        <div class="input-ui__footer" data-input="message"></div>
-                                    </label>
-                                    <label class="input-ui input-ui--password" data-input="block">
-                                        <div class="input-ui__wrapper">
-                                            <input type="password" class="input-ui__field" placeholder="" data-input="field">
-                                            <p class="input-ui__title">
-                                                Пароль
-                                            </p>
-                                            <button data-input="button-type" class="input-ui__button"></button>
-                                        </div>
-                                        <div class="input-ui__footer" data-input="message"></div>
-                                    </label>
+                                <div class="form-card__section" data-form-section>
+                                    <div class="form-card__main">
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Email
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui input-ui--password" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="password" class="input-ui__field" placeholder="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Пароль
+                                                </p>
+                                                <button data-input="button-type" class="input-ui__button"></button>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="form-card__controls">
                                     <div class="stack stack--14">
                                         <div class="stack stack--8">
-                                            <button class="button button--green button--large full-width" type="button">
+                                            <button class="button button--green button--large full-width" type="button" data-form-button="submit">
                                                 <span class="button__text">
                                                     Войти
                                                 </span>
                                             </button>
                                         </div>
 
-                                        <button class="button-minor full-width" type="button">
+                                        <button class="button-minor full-width" type="button" >
                                             Забыли пароль?
                                         </button>
                                     </div>
@@ -227,7 +240,7 @@
                             </div>
                         </div>
                         <div style="width: 360px;">
-                            <div class="form-card form-card--fix-height">
+                            <form class="form-card form-card--fix-height" data-form>
                                 <div class="form-card__header">
                                     <div class="form-card__head-toolbar">
                                         <span class="active">Регистрация</span>
@@ -235,73 +248,128 @@
                                         <a href="">Вход</a>
                                     </div>
                                 </div>
-                                <div class="form-card__main">
-                                    <label class="input-ui" data-input="block">
-                                        <div class="input-ui__wrapper">
-                                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
-                                            <p class="input-ui__title">
-                                                Фамилия
-                                            </p>
-                                        </div>
-                                        <div class="input-ui__footer" data-input="message"></div>
-                                    </label>
-                                    <label class="input-ui" data-input="block">
-                                        <div class="input-ui__wrapper">
-                                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
-                                            <p class="input-ui__title">
-                                                Имя
-                                            </p>
-                                        </div>
-                                        <div class="input-ui__footer" data-input="message"></div>
-                                    </label>
-                                    <label class="input-ui" data-input="block">
-                                        <div class="input-ui__wrapper">
-                                            <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
-                                            <p class="input-ui__title">
-                                                +7 (000) 000-00-00
-                                            </p>
-                                        </div>
-                                        <div class="input-ui__footer" data-input="message"></div>
-                                    </label>
+                                <div class="form-card__section" data-form-section>
+                                    <div class="form-card__main">
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Фамилия
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Имя
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required data-input-phone>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field" data-input-mask="phone">
+                                                <p class="input-ui__title">
+                                                    +7 (000) 000-00-00
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
 
-                                </div>
-                                <div class="form-card__inputs">
-                                    <label class="checkbox-text">
-                                        <input type="checkbox" class="checkbox-text__input" name="mode" value="worker">
-                                        <div class="checkbox-text__box"></div>
-                                        <p class="checkbox-text__title">
-                                            Мебельщик
-                                        </p>
-                                    </label>
-                                </div>
-                                <div class="form-card__controls">
-                                    <div class="stack stack--14">
-                                        <div class="stack stack--8">
-                                            <button class="button button--green button--large full-width" type="button">
+                                    </div>
+                                    <div class="form-card__inputs">
+                                        <label class="checkbox-text">
+                                            <input type="checkbox" class="checkbox-text__input" name="mode" value="worker">
+                                            <div class="checkbox-text__box"></div>
+                                            <p class="checkbox-text__title">
+                                                Мебельщик
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="form-card__controls">
+                                        <div class="stack stack--14">
+                                            <div class="stack stack--8">
+                                                <button class="button button--green button--large full-width" type="button" data-form-button="next">
                                                 <span class="button__text">
                                                     Продолжить
                                                 </span>
-                                            </button>
-                                            <p class="caption-form">
-                                                Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на обработку персональных данных.
-                                            </p>
+                                                </button>
+                                                <p class="caption-form">
+                                                    Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на обработку персональных данных.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-card__pagination">
-                                    <div class="bullets bullets--green">
-                                        <div class="bullets__item active">
-                                            <span class="bullets__item-content"></span>
-                                        </div>
-                                        <div class="bullets__item">
-                                            <span class="bullets__item-content"></span>
-                                        </div>
-                                        <div class="bullets__item">
-                                            <span class="bullets__item-content"></span>
+                                <div class="form-card__section" data-form-section hidden>
+                                    <div class="form-card__main">
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Email
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui input-ui--password" data-input="block" data-input-required data-input-password="1">
+                                            <div class="input-ui__wrapper">
+                                                <input type="password" class="input-ui__field" placeholder="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Пароль
+                                                </p>
+                                                <button data-input="button-type" class="input-ui__button"></button>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui input-ui--password" data-input="block" data-input-required data-input-password="2">
+                                            <div class="input-ui__wrapper">
+                                                <input type="password" class="input-ui__field" placeholder="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Повторите пароль
+                                                </p>
+                                                <button data-input="button-type" class="input-ui__button"></button>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                    </div>
+                                    <div class="form-card__controls">
+                                        <div class="stack stack--14">
+                                            <div class="stack stack--8">
+                                                <button class="button button--green button--large full-width" type="button" data-form-button="next-submit">
+                                                    <span class="button__text">
+                                                        Продолжить
+                                                    </span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-card__section" data-form-section hidden>
+                                    <div class="form-card__message">
+                                        <p>
+                                            На вашу почту придёт ссылка с подтверждением о регистрации.
+                                        </p>
+                                        <p>
+                                            Перейдите по ней, чтобы активировать аккаунт.
+                                        </p>
+                                    </div>
+                                    <div class="form-card__controls">
+                                        <div class="stack stack--14">
+                                            <div class="stack stack--8">
+                                                <a href="" class="button button--green button--large full-width">
+                                                    <span class="button__text">
+                                                        Войти в аккаунт
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-card__pagination" data-form-pagination></div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -423,5 +491,5 @@
 </footer>
 
 </div>
-<script defer src="bundle.4263.js"></script></body>
+<script defer src="bundle.64fb.js"></script></body>
 </html>
