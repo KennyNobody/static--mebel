@@ -1,0 +1,25 @@
+.message-result {
+    text-align: center;
+
+    &__icon {
+        width: 58px;
+        height: 58px;
+        display: block;
+        margin: 0 auto 30px;
+        fill: var(--color-green);
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: var(--color-dark);
+    }
+
+    &__caption {
+        color: #8C8C8C;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

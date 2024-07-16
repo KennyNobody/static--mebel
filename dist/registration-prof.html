@@ -14,7 +14,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link href="css/main.e20a.css" rel="stylesheet"></head>
+<link href="css/main.32c6.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
@@ -323,11 +323,110 @@
                             </p>
                         </div>
                     </div>
-                    <a href="" class="button button--green button--large full-width">
+                    <a href="#modal-form" class="button button--green button--large full-width" data-fancybox>
                         <span class="button__text">
                             Написать нам
                         </span>
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" hidden>
+        <div class="modal" id="modal-form">
+            <div class="container">
+                <div class="layout-modal">
+                    <div class="layout-modal__header layout-modal__header--end">
+                        <button class="button-close" data-fancybox-close>
+                            <span class="button-close__text">
+                                Закрыть
+                            </span>
+                            <div class="button-close__circle">
+                                <svg class="button-close__icon">
+                                    <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="layout-modal__main">
+                        <div class="stack stack--30">
+                            <form class="form-card form-card--fix-height form-card--modal" data-form>
+                                <div class="form-card__header">
+                                    <h2 class="title">
+                                        Написать нам
+                                    </h2>
+                                </div>
+                                <div class="form-card__section" data-form-section>
+                                    <div class="form-card__main">
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Имя
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Имя
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required data-input-phone>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field" data-input-mask="phone">
+                                                <p class="input-ui__title">
+                                                    +7 (000) 000-00-00
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <textarea class="input-ui__textarea" placeholder="" data-input="field"></textarea>
+                                                <p class="input-ui__title">
+                                                    Комментарий...
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                    </div>
+                                    <div class="form-card__controls">
+                                        <div class="stack stack--14">
+                                            <div class="stack stack--8">
+                                                <button class="button button--green button--large full-width" type="button" data-form-button="submit">
+                                                    <span class="button__text">
+                                                        Продолжить
+                                                    </span>
+                                                </button>
+                                                <p class="caption-form">
+                                                    Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на <a
+                                                        href="">обработку персональных данных</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-card__message" data-form-message="result" hidden>
+                                    <div class="message-result">
+                                        <svg class="message-result__icon">
+                                            <use href="./assets/sprite/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <p class="message-result__title">
+                                            Ваше сообщение успешно отправлено
+                                        </p>
+                                        <p class="message-result__caption">
+                                            Ожидайте, скоро наш менеджер свяжется с вами.
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -398,5 +497,5 @@
 
 
 </div>
-<script defer src="bundle.64fb.js"></script></body>
+<script defer src="bundle.228d.js"></script></body>
 </html>

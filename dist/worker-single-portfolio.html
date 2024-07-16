@@ -14,7 +14,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link href="css/main.e20a.css" rel="stylesheet"></head>
+<link href="css/main.32c6.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
@@ -157,7 +157,7 @@
                     Сообщение
                 </span>
             </button>
-            <button class="button button--grey-light button--middle full-width active">
+            <button class="button button--grey-light button--middle full-width active mob-visible-flex">
                 <svg class="button__icon">
                     <use href="./assets/sprite/sprite.svg#icon-favorite-fill"></use>
                 </svg>
@@ -305,6 +305,9 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
+                                                                    <a href="#modal-1" class="link-tooltip" data-fancybox="reviews-child">
+                                                                        Смотреть
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -326,34 +329,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -394,19 +399,19 @@
                                                                                     <span class="tags__item">
                                                                                     #Коричневый
                                                                                 </span>
-                                                                                </div>
-                                                                                <div class="toolbar-stack toolbar-stack--modal">
-                                                                                    <button class="button-action">
-                                                                                        <svg class="button-action__icon">
-                                                                                            <use href="./assets/sprite/sprite.svg#icon-like"></use>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                    <button class="button-action">
-                                                                                        <svg class="button-action__icon">
-                                                                                            <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
+                                                                            </div>
+                                                                            <div class="toolbar-stack toolbar-stack--modal">
+                                                                                <button class="button-action">
+                                                                                    <svg class="button-action__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like"></use>
+                                                                                    </svg>
+                                                                                </button>
+                                                                                <button class="button-action">
+                                                                                    <svg class="button-action__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-favorite"></use>
+                                                                                    </svg>
+                                                                                </button>
+                                                                            </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="grid__col grid__col--1"></div>
@@ -513,6 +518,26 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -572,7 +597,7 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
-                                                                    <a href="" class="link-tooltip">
+                                                                    <a href="#modal-2" class="link-tooltip" data-fancybox="reviews-child">
                                                                         Смотреть
                                                                     </a>
                                                                 </div>
@@ -596,34 +621,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -783,6 +810,26 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -842,7 +889,7 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
-                                                                    <a href="" class="link-tooltip">
+                                                                    <a href="#modal-3" class="link-tooltip" data-fancybox="reviews-child">
                                                                         Смотреть
                                                                     </a>
                                                                 </div>
@@ -866,34 +913,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -1053,6 +1102,26 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1112,7 +1181,7 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
-                                                                    <a href="" class="link-tooltip">
+                                                                    <a href="#modal-4" class="link-tooltip" data-fancybox="reviews-child">
                                                                         Смотреть
                                                                     </a>
                                                                 </div>
@@ -1136,34 +1205,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -1323,6 +1394,26 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1382,7 +1473,7 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
-                                                                    <a href="" class="link-tooltip">
+                                                                    <a href="#modal-5" class="link-tooltip" data-fancybox="reviews-child">
                                                                         Смотреть
                                                                     </a>
                                                                 </div>
@@ -1406,34 +1497,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -1593,6 +1686,26 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1652,6 +1765,9 @@
                                                                     <a href="" class="link-tooltip">
                                                                         Заказать похожее
                                                                     </a>
+                                                                    <a href="#modal-6" class="link-tooltip" data-fancybox="reviews-child">
+                                                                        Смотреть
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1673,34 +1789,36 @@
                                                                         </h3>
                                                                         <div class="head-person__controls">
                                                                             <a href="./" class="button button--green button--small">
-                                                                            <span class="button__text">
-                                                                                Заказать похожее
-                                                                            </span>
+                                                                                <span class="button__text">
+                                                                                    Заказать похожее
+                                                                                </span>
                                                                             </a>
-                                                                            <div class="post-stat">
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    3569
-                                                                                </span>
-                                                                                </div>
-                                                                                <div class="post-stat__item">
-                                                                                    <svg class="post-stat__icon">
-                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
-                                                                                    </svg>
-                                                                                    <span class="post-stat__caption">
-                                                                                    245
-                                                                                </span>
+                                                                            <div class="mob-hidden">
+                                                                                <div class="post-stat">
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            3569
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="post-stat__item">
+                                                                                        <svg class="post-stat__icon">
+                                                                                            <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                        </svg>
+                                                                                        <span class="post-stat__caption">
+                                                                                            245
+                                                                                        </span>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <button class="button-close" data-fancybox-close>
-                                                                    <span class="button-close__text">
-                                                                        Закрыть
-                                                                    </span>
+                                                                        <span class="button-close__text">
+                                                                            Закрыть
+                                                                        </span>
                                                                         <div class="button-close__circle">
                                                                             <svg class="button-close__icon">
                                                                                 <use href="./assets/sprite/sprite.svg#icon-close"></use>
@@ -1863,6 +1981,26 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="grid__col grid__col-mob--4 mob-visible">
+                                                                            <div class="post-stat">
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-eye-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        3569
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="post-stat__item">
+                                                                                    <svg class="post-stat__icon">
+                                                                                        <use href="./assets/sprite/sprite.svg#icon-like-color"></use>
+                                                                                    </svg>
+                                                                                    <span class="post-stat__caption">
+                                                                                        245
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="layout-modal__footer">
@@ -1873,8 +2011,8 @@
                                                                             </svg>
                                                                         </div>
                                                                         <span class="button-nav__text">
-                                                                            Предыдущее
-                                                                        </span>
+                                                                        Предыдущее
+                                                                    </span>
                                                                     </button>
                                                                     <button class="button-nav" data-carousel-next="true">
                                                                     <span class="button-nav__text">
@@ -2046,11 +2184,110 @@
                             </p>
                         </div>
                     </div>
-                    <a href="" class="button button--green button--large full-width">
+                    <a href="#modal-form" class="button button--green button--large full-width" data-fancybox>
                         <span class="button__text">
                             Написать нам
                         </span>
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" hidden>
+        <div class="modal" id="modal-form">
+            <div class="container">
+                <div class="layout-modal">
+                    <div class="layout-modal__header layout-modal__header--end">
+                        <button class="button-close" data-fancybox-close>
+                            <span class="button-close__text">
+                                Закрыть
+                            </span>
+                            <div class="button-close__circle">
+                                <svg class="button-close__icon">
+                                    <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="layout-modal__main">
+                        <div class="stack stack--30">
+                            <form class="form-card form-card--fix-height form-card--modal" data-form>
+                                <div class="form-card__header">
+                                    <h2 class="title">
+                                        Написать нам
+                                    </h2>
+                                </div>
+                                <div class="form-card__section" data-form-section>
+                                    <div class="form-card__main">
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Имя
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field">
+                                                <p class="input-ui__title">
+                                                    Имя
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required data-input-phone>
+                                            <div class="input-ui__wrapper">
+                                                <input type="text" class="input-ui__field" placeholder="" value="" data-input="field" data-input-mask="phone">
+                                                <p class="input-ui__title">
+                                                    +7 (000) 000-00-00
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                        <label class="input-ui" data-input="block" data-input-required>
+                                            <div class="input-ui__wrapper">
+                                                <textarea class="input-ui__textarea" placeholder="" data-input="field"></textarea>
+                                                <p class="input-ui__title">
+                                                    Комментарий...
+                                                </p>
+                                            </div>
+                                            <div class="input-ui__footer" data-input="message"></div>
+                                        </label>
+                                    </div>
+                                    <div class="form-card__controls">
+                                        <div class="stack stack--14">
+                                            <div class="stack stack--8">
+                                                <button class="button button--green button--large full-width" type="button" data-form-button="submit">
+                                                    <span class="button__text">
+                                                        Продолжить
+                                                    </span>
+                                                </button>
+                                                <p class="caption-form">
+                                                    Нажимая на кнопку “Продолжить”, я подтверждаю своё согласие на <a
+                                                        href="">обработку персональных данных</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-card__message" data-form-message="result" hidden>
+                                    <div class="message-result">
+                                        <svg class="message-result__icon">
+                                            <use href="./assets/sprite/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <p class="message-result__title">
+                                            Ваше сообщение успешно отправлено
+                                        </p>
+                                        <p class="message-result__caption">
+                                            Ожидайте, скоро наш менеджер свяжется с вами.
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2121,5 +2358,5 @@
 
 
 </div>
-<script defer src="bundle.64fb.js"></script></body>
+<script defer src="bundle.228d.js"></script></body>
 </html>

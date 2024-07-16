@@ -3,4 +3,13 @@
     font-size: 12px;
     font-weight: 300;
     text-align: left;
+    transition: 0.3s all;
+
+    a {
+        color: var(--color-green);
+
+        &:hover {
+            color: #C4C4C4;
+        }
+    }
 }

@@ -1,0 +1,32 @@
+.menu-mobile {
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    display: flex;
+    max-width: 220px;
+    position: absolute;
+    border-radius: 20px;
+    top: calc(100% + 15px);
+    flex-direction: column;
+    padding: 10px 10px 10px;
+    border: 1px solid #EEEEEE;
+    background-color: var(--color-white);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 8px 32px -4px #676F7B1A;
+
+    &[hidden] {
+        display: none;
+        visibility: hidden;
+    }
+
+    &__link {
+        padding: 12px;
+        display: block;
+        font-size: 16px;
+        border-bottom: 1px solid #EEEEEE;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+}

@@ -93,13 +93,18 @@ class Form {
     }
 
     private submit = () => {
-        console.log('сабит');
         const inputs = this.sections[this.sectionIndex].querySelectorAll('[data-input="block"]');
         if (!this.validateSection(inputs)) return false;
 
-        setTimeout(() => {
-            alert('После ответа от сервера обновляем страницу');
-        }, 1500);
+        const message = this.parent.querySelector('[data-form-message="result"]');
+
+        if (message) {
+            message.removeAttribute('hidden');
+
+            setTimeout(() => {
+                message.setAttribute('hidden', 'hidden');
+            }, 1500);
+        }
     }
 
     private renderPagination = () => {
@@ -144,12 +149,17 @@ class Form {
         const message = el.querySelector('[data-input="message"]');
         if (message) message.innerHTML = '';
 
-        const field = el.querySelector('input');
+        const field = el.querySelector('input') || el.querySelector('textarea');
 
+        console.log(field);
         if (el.hasAttribute('data-input-required')) {
+
+
 
             if (!field.value) {
                 errors.push(1);
+
+
 
                 if (flag) flag = false;
             }

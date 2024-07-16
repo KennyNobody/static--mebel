@@ -32,7 +32,6 @@ class Tooltip {
         const actionEl = event.target as Node;
 
         if (this.isActive && !this.el.contains(actionEl)) {
-            // this.isActive = false;
             this.toggleItem();
         }
     }

@@ -9,6 +9,7 @@ import {Input} from "../ui/input";
 import {SortList} from "../ui/sortList";
 import {Form} from "../ui/form";
 import IMask from "imask";
+import {Menu} from "../ui/menu";
 
 class App {
     constructor() {
@@ -27,6 +28,7 @@ class App {
         this.initSortList();
         this.initForm();
         this.initInputMask();
+        this.initMenu();
     }
 
     private initSliders = (el?: Element) => {
@@ -91,6 +93,9 @@ class App {
                 infinite: true,
                 Navigation: false,
             },
+            Thumbs: {
+                thumbTpl: '',
+            }
         });
     }
 
@@ -118,6 +123,12 @@ class App {
         elements.forEach((item) => IMask(item, {
             mask: '+{7}(000)000-00-00'
         }))
+    }
+
+    private initMenu = () => {
+        const elements: NodeListOf<Element> = document.querySelectorAll('[data-menu="block"]');
+
+        elements.forEach((item) => new Menu(item));
     }
 }
 

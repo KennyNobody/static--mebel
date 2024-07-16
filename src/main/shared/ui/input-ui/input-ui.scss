@@ -80,6 +80,33 @@
         }
     }
 
+    &__textarea {
+        width: 100%;
+        height: 100px;
+        display: block;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid #A9ABB0;
+
+        & + .input-ui__title {
+            top: 15px;
+            left: 12px;
+            padding: 0;
+            //transform: translateY(50%);
+            background-color: var(--color-white);
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            & + .input-ui__title {
+                top: -1px;
+                left: 12px;
+                //transform: translateY(50%);
+                background-color: var(--color-white);
+            }
+        }
+    }
+
     &__footer {
         display: none;
         font-size: 12px;

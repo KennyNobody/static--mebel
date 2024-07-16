@@ -31,6 +31,7 @@ import './icon-location.svg';
 import './icon-login.svg';
 import './icon-mail.svg';
 import './icon-menu.svg';
+import './icon-message.svg';
 import './icon-pagination-next.svg';
 import './icon-pagination-prev.svg';
 import './icon-plus.svg';

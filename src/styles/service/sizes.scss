@@ -7,6 +7,11 @@
     visibility: hidden;
 }
 
+.mob-visible-flex {
+    display: none;
+    visibility: hidden;
+}
+
 @media (max-width: 1299px) {
     .mob-full-width {
         width: 100%;
@@ -19,6 +24,11 @@
 
     .mob-visible {
         display: block;
+        visibility: visible;
+    }
+
+    .mob-visible-flex {
+        display: flex;
         visibility: visible;
     }
 }

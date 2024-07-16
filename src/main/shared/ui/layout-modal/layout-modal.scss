@@ -6,6 +6,10 @@
         margin-bottom: 20px;
         align-items: flex-end;
         justify-content: space-between;
+
+        &--end {
+            justify-content: flex-end;
+        }
     }
 
     &__main {
