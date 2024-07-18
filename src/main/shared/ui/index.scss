@@ -1,3 +1,4 @@
+@import "./article-board/article-board";
 @import "./article-category/article-category";
 @import "./article-portfolio/article-portfolio";
 @import "./article-process/article-process";
@@ -10,6 +11,8 @@
 @import "./aside-profile/aside-profile";
 @import "./block-fact/block-fact";
 @import "./block-info/block-info";
+@import "./block-price/block-price";
+@import "./block-text/block-text";
 @import "./body/body";
 @import "./breadcrumbs/breadcrumbs";
 /**/ @import "./bullets/bullets";
@@ -42,6 +45,7 @@
 @import "./factoid-info/factoid-info";
 /**/ @import "./field-group/field-group";
 /**/ @import "./filter-aside/filter-aside";
+/**/ @import "./filter-wrapper/filter-wrapper";
 /**/ @import "./footer-columns/footer-columns";
 /**/ @import "./form-card/form-card";
 /**/ @import "./form-search/form-search";

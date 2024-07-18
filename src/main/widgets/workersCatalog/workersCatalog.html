@@ -5,8 +5,22 @@
                 Мебельщики
             </h1>
             <div class="grid">
-                <div class="grid__col grid__col--2 grid__col-mob--4 mob-hidden">
-                    <form action="#" class="filter-aside">
+                <div class="grid__col grid__col--2 grid__col-mob--4">
+                    <div class="filter-wrapper" data-filter="block">
+                        <div class="filter-wrapper__header">
+                            <button class="button-close" type="button" data-filter-button>
+                                <span class="button-close__text">
+                                    Закрыть
+                                </span>
+                                <div class="button-close__circle">
+                                    <svg class="button-close__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="filter-wrapper__content">
+                            <form action="#" class="filter-aside">
                         <div class="filter-aside__main">
                             <h3 class="filter-aside__title">
                                 Фильтр
@@ -155,12 +169,14 @@
                             </button>
                         </div>
                     </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__col grid__col--6 grid__col-mob--4">
                     <div class="stack stack--20">
-                        <form class="toolbar-catalog">
+                        <form class="toolbar-catalog toolbar-catalog--sticky">
                             <div class="toolbar-catalog__filter">
-                                <button class="button-filter" type="button">
+                                <button class="button-filter" type="button" type="button" data-filter-button>
                                     <span class="button-filter__text">
                                         Фильтр
                                     </span>

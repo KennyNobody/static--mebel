@@ -1,0 +1,42 @@
+.filter-wrapper {
+    &__header {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1299px) {
+    .filter-wrapper {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        display: none;
+        position: fixed;
+        padding: 40px 15px;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(24, 24, 27, 0.98);
+
+        &.active {
+            display: flex;
+            visibility: visible;
+        }
+
+        &__header {
+            display: flex;
+            margin-bottom: 10px;
+            visibility: visible;
+            justify-content: flex-end;
+        }
+
+        &__content {
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 20px;
+            background-color: var(--color-white);
+        }
+    }
+}

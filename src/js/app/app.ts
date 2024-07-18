@@ -10,13 +10,19 @@ import {SortList} from "../ui/sortList";
 import {Form} from "../ui/form";
 import IMask from "imask";
 import {Menu} from "../ui/menu";
+import {FilterUI} from "../ui/filterUI";
+import {BodyUI} from "../ui/bodyUI";
 
 class App {
+    bodyUI: BodyUI;
+    filterUI: FilterUI;
+
     constructor() {
         this.init();
     }
 
     init = () => {
+        this.initBody();
         this.initDropdown();
         this.initFieldgroup();
         this.initSliders();
@@ -29,6 +35,13 @@ class App {
         this.initForm();
         this.initInputMask();
         this.initMenu();
+        this.initFilterUI();
+    }
+
+    private initBody = () => {
+        const el: Element = document.querySelector('body');
+
+        this.bodyUI = new BodyUI(el);
     }
 
     private initSliders = (el?: Element) => {
@@ -129,6 +142,12 @@ class App {
         const elements: NodeListOf<Element> = document.querySelectorAll('[data-menu="block"]');
 
         elements.forEach((item) => new Menu(item));
+    }
+
+    private initFilterUI = () => {
+        const element: Element = document.querySelector('[data-filter="block"]');
+
+        this.filterUI = new FilterUI(element, this.bodyUI || null);
     }
 }
 

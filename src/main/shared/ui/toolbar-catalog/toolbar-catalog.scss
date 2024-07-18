@@ -24,9 +24,16 @@
 @media (max-width: 1299px) {
     .toolbar-catalog {
         gap: 16px;
+        background-color: var(--color-white);
+
+        &--sticky {
+            top: -60px;
+            position: sticky;
+            padding-bottom: 5px;
+        }
 
         &__filter {
-            order: 1;
+            order: 2;
             display: block;
             visibility: visible;
             width: calc(50% - 8px);
@@ -37,12 +44,12 @@
         }
 
         &__select {
-            order: 2;
+            order: 3;
             width: calc(50% - 8px);
         }
 
         &__search {
-            order: 3;
+            order: 1;
         }
 
         &__items {

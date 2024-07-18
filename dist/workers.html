@@ -14,14 +14,31 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link href="css/main.32c6.css" rel="stylesheet"></head>
+<link href="css/main.30ce.css" rel="stylesheet"></head>
 <body class="body">
 <div class="page">
     <header class="section section--header">
     <div class="container">
         <nav class="nav">
+            <menu class="menu-mobile" data-menu="block" hidden="hidden">
+                <a href="" class="menu-mobile__link">
+                    Портфолио
+                </a>
+                <a href="" class="menu-mobile__link">
+                    Мебельщики
+                </a>
+                <a href="" class="menu-mobile__link">
+                    Доска заказов
+                </a>
+                <a href="" class="menu-mobile__link">
+                    Помощь
+                </a>
+                <a href="" class="menu-mobile__link">
+                    О сервисе
+                </a>
+            </menu>
             <div class="nav__mobile-toolbar">
-                <button class="button-menu">
+                <button class="button-menu" data-menu="button">
                     <svg class="button-menu__icon">
                         <use href="./assets/sprite/sprite.svg#icon-menu"></use>
                     </svg>
@@ -95,8 +112,22 @@
                 Мебельщики
             </h1>
             <div class="grid">
-                <div class="grid__col grid__col--2 grid__col-mob--4 mob-hidden">
-                    <form action="#" class="filter-aside">
+                <div class="grid__col grid__col--2 grid__col-mob--4">
+                    <div class="filter-wrapper" data-filter="block">
+                        <div class="filter-wrapper__header">
+                            <button class="button-close" type="button" data-filter-button>
+                                <span class="button-close__text">
+                                    Закрыть
+                                </span>
+                                <div class="button-close__circle">
+                                    <svg class="button-close__icon">
+                                        <use href="./assets/sprite/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="filter-wrapper__content">
+                            <form action="#" class="filter-aside">
                         <div class="filter-aside__main">
                             <h3 class="filter-aside__title">
                                 Фильтр
@@ -245,12 +276,14 @@
                             </button>
                         </div>
                     </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid__col grid__col--6 grid__col-mob--4">
                     <div class="stack stack--20">
-                        <form class="toolbar-catalog">
+                        <form class="toolbar-catalog toolbar-catalog--sticky">
                             <div class="toolbar-catalog__filter">
-                                <button class="button-filter" type="button">
+                                <button class="button-filter" type="button" type="button" data-filter-button>
                                     <span class="button-filter__text">
                                         Фильтр
                                     </span>
@@ -1156,6 +1189,9 @@
                     <a href="./worker-single-reviews.html">Мебельщики одиночная (Отзывы)</a>
                 </div>
                 <div class="temp-links">
+                    <a href="./board.html">Доска заказов</a>
+                </div>
+                <div class="temp-links">
                     <a href="./sign-in.html">Форма входа</a>
                     <a href="./registration-user.html">Регистрация клиента</a>
                     <a href="./registration-prof.html">Регистрация мебельщика</a>
@@ -1176,5 +1212,5 @@
 
 
 </div>
-<script defer src="bundle.228d.js"></script></body>
+<script defer src="bundle.0b7d.js"></script></body>
 </html>

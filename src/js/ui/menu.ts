@@ -13,8 +13,7 @@ class Menu {
 
         this.buttons.forEach((item) => {
             item.addEventListener('click', (event) => {
-                event.stopPropagation();  // Останавливаем всплытие события
-                console.log('Пык');
+                event.stopPropagation();
 
                 if (this.el.hasAttribute('hidden')) {
                     this.el.removeAttribute('hidden');

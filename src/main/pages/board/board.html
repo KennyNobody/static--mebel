@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Доска заказов - Мебельница</title>
+    <%= htmlWebpackPlugin.options.widgets.head %>
+</head>
+<body class="body">
+    <div class="page">
+        <%= htmlWebpackPlugin.options.widgets.header %>
+        <main class="main main--regular pb-160 pb-m-90">
+            <div class="main__section">
+                <section class="section mb-50">
+                    <div class="container">
+                        <nav class="breadcrumbs">
+                            <a href="./" class="breadcrumbs__item">
+                                Главная
+                            </a>
+                            <span class="breadcrumbs__item">
+                                /
+                            </span>
+                            <span class="breadcrumbs__item">
+                                Доска заказов
+                            </span>
+                        </nav>
+                    </div>
+                </section>
+                <%= htmlWebpackPlugin.options.widgets.boardCatalog %>
+            </div>
+        </main>
+        <%= htmlWebpackPlugin.options.widgets.footer %>
+        <%= htmlWebpackPlugin.options.widgets.tempLinks %>
+    </div>
+</body>
+</html>
